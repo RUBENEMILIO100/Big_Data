@@ -98,13 +98,20 @@ my_tup._7
 ```
 
 ```scala
-list+= "green"
-list+= "yellow"
-list+= "blue"
+list+= "red"
+list+= "white"
+list+= "black"
 list+= "orange" 
 list+= "pearl"
 ```
 
+ ```scala
+ 2. Add 5 more items to "list": "green" ,"yellow", "blue", "orange", "pearl"
+```
+
+ ```scala
+ list = "verde" ::"amarillo" ::"azul" ::"naranja" ::"perla" :: list
+```
 
 
 
