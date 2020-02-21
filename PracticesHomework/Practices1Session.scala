@@ -1,5 +1,5 @@
 // Assessment 1/Practice 1 // Diaz Martinez Ruben Emilio # 15210791
-// Flores Acosta Alfreso # 152103
+// Flores Acosta Alfreso # 15210331
 //1. Develop an algorithm in scala that calculates the radius of a circle
 
 val c = 6
