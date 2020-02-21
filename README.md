@@ -223,3 +223,32 @@ else
 }
 funcion1(9)
 ```
+
+ ```scala
+ // Third Algorithm
+
+// In this third algorithm a function was added that after having performed
+// the corresponding operations the function will give us a result (return)
+// this must be an integer value (Int)
+
+def funcion2(n: Int): Int =
+{
+var a = 0
+var b = 1
+var c = 0
+
+// A cycle (for) starts where k = 1, will start cycling until it becomes (n)
+// (n) represents the value that will be entered into the function
+ for (k <- 1 to n)
+    {
+// Depending on the cycle (for) the variables (c, a, b) will begin to change their result
+// until the end of the cycle (for)
+    c = b + a
+        a = b
+        b = c
+    }
+// The result will be returned with (return)
+    return(a)
+}
+funcion2(9)
+ ```
