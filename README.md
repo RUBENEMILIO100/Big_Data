@@ -21,5 +21,6 @@
 
                                          NOMBRE Y NÚMERO DE CONTROL DEL ALUMNO:
                                          Diaz Martinez Ruben Emilio #15210791
+                                         Flores Acosta Alfredo #1521
                                                 NOMBRE DEL MAESTRO (A):
                                          Dr. Jose Christian Romero Hernandez
