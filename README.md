@@ -59,6 +59,18 @@ def Esprimo(i :Int) : Boolean = {
 var bird = "tweet"
 println ("Im writen a  " + bird)
 ```
+```scala
+4. Given the variable message = "Hi Luke, I'm your father!" use slilce to extract thesequence "Luke"
+```
+
+```scala
+var variable = "Hello Luke i am your father!"
+variable.slice(5,9)
+```
+
+
+
+
 
 
 
