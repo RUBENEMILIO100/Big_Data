@@ -36,7 +36,6 @@
 // Flores Acosta Alfreso # 152103
 //1. Develop an algorithm in scala that calculates the radius of a circle
 ```
-
     
 ```scala
 val c = 6
