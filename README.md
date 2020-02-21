@@ -75,7 +75,14 @@ variable.slice(5,9)
 Value (val) is assigned a value and can no longer be changed
 Variable (var) the assigned value can be changed
 ```
+```scala
+6. Given the tuple ((2,4,5), (1,2,3), (3,114,23))) return the number 3.1416
+```
 
+```scala
+var my_tup = (2,4,5,1,2,3,3.1416,23)
+my_tup._7
+```
 
 
 
