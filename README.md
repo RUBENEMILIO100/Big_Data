@@ -23,13 +23,6 @@
                                                 NOMBRE DEL MAESTRO (A):
                                          Dr. Jose Christian Romero Hernandez 
 # Practices, Unit 1.
-// Assessment 1/Practice 1 // Diaz Martinez Ruben Emilio # 15210791
-// Flores Acosta Alfreso # 152103
-//1. Develop an algorithm in scala that calculates the radius of a circle
-
-val c = 6
-
-var radius = c/(2*3.1416)
 
     Develop an algorithm in scala that calculates the radius of a circle.
     Develop an algorithm in scala that tells me if a number is a prime number.
