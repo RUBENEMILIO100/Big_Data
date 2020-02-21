@@ -307,4 +307,21 @@ codigo de la 8
 df.select(sum("High")).show()
   ``` 
   
+ ```scala  
+//10.  
+codigo de la 10
+  ``` 
   
+```scala  
+//11. 
+df.select(countDistinct("Volume")).show()
+  ``` 
+  
+```scala  
+//12. 
+codigo de la 12
+  ``` 
+  ```scala  
+//13. 
+df.select(var_pop("Close")).show()
+  ``` 
