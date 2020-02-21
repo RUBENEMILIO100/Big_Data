@@ -13,8 +13,6 @@
 
                                                      MATERIA:
                                                    Datos Masivos
-
-                                                      TÍTULO:
                                           
                                                   UNIDAD A EVALUAR:
                                                       Unidad 1
