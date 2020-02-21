@@ -20,3 +20,5 @@
                                                 Flores Acosta Alfredo
                                               NOMBRE DEL MAESTRO (A):
                                            Dr. Jose Christian Romero Hernandez
+                                           SEMESTRE: 
+
