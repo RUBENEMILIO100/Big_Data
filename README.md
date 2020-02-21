@@ -232,7 +232,7 @@ funcion1(9)
 // this must be an integer value (Int)
  ```
 
-
+```scala
 def funcion2(n: Int): Int =
 {
 var a = 0
