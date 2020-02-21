@@ -147,7 +147,7 @@ list2.toSet
 ```
 
  ```scala
- 6a. Print all map keys
+ 6(a). Print all map keys
 ```
 
  ```scala
