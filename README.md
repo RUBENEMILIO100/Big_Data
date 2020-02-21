@@ -121,6 +121,14 @@ list+= "pearl"
  list slice (3,6)
 ```
 
+ ```scala
+ 4.Create a number array in the 1-1000 range in 5-in-5 steps
+```
+
+ ```scala
+ Array.range(1,1000, 5)
+```
+
 
 
 
