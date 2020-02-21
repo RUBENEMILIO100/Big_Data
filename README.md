@@ -110,7 +110,7 @@ list+= "pearl"
 ```
 
  ```scala
- list = "verde" ::"amarillo" ::"azul" ::"naranja" ::"perla" :: list
+ list = "verde" ::"yellow" ::"blue" ::"orange" ::"pearl" :: list
 ```
 
 
