@@ -92,6 +92,18 @@ my_tup._7
     6- Create a mutable map called "names" that contains the following "Jose", 20, "Luis", 24, "Ana", 23, "Susana", "27".
     7- Print all map keys.
     8- Add the following value to the map ("Miguel", 23).
+    
+ ```scala
+ 1. Create a list called "list" with the elements "red", "white", "black"
+```
+
+```scala
+list+= "green"
+list+= "yellow"
+list+= "blue"
+list+= "orange" 
+list+= "pearl"
+```
 
 
 
