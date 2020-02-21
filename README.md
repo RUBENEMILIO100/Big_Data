@@ -32,11 +32,8 @@
     Given the tuple (2,4,5,1,2,3,3.1416,23) return the number 3.1416. 
     
 ```scala
-// Assessment 1/Practice 1 // Diaz Martinez Ruben Emilio # 15210791
-// Flores Acosta Alfreso # 152103
-//1. Develop an algorithm in scala that calculates the radius of a circle
+Develop an algorithm in scala that calculates the radius of a circle.
 ```
-    
 ```scala
 val c = 6
 
