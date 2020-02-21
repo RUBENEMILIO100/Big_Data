@@ -17,7 +17,7 @@ def Esprimo(i :Int) : Boolean = {
     !(2 to (i-1)).exists(x=> i % x==0)
 }
 
-Inglés
+
 
 //3. Given the variable bird = "tweet", use string interpolation to
 // print "I am writing a tweet"
