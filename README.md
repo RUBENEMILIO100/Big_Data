@@ -129,6 +129,15 @@ list+= "pearl"
  Array.range(1,1000, 5)
 ```
 
+ ```scala
+ 5. What are the unique elements of the List list (1,3,3,4,6,7,3,7) use conversion to sets
+```
+
+```scala
+var list2 = Lista (1,3,3,4,6,7,3,7)
+list2.toSet
+```
+
 
 
 
