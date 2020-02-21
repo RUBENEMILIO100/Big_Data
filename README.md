@@ -42,6 +42,15 @@ var radius = c/(2*3.1416)
 ```scala
 2- Develop an algorithm in scala that tells me if a number is a prime number.
 ```
-
+```scala
+def Esprimo(i :Int) : Boolean = {
+    if (i <= 1)
+    false
+    else if (i==2)
+    true
+    else
+    !(2 to (i-1)).exists(x=> i % x==0)
+}
+```
 
 
