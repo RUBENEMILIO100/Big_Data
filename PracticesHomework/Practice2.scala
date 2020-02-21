@@ -2,7 +2,7 @@
 // Arrays are mutable, List are not
 //Practice 2 (Session_3) 
 // Diaz Martinez Ruben Emilio #15210791
-// Flores Acosta Alfredo # 
+// Flores Acosta Alfredo # 15210331
 
 import scala.collection.mutable.ListBuffer
 val list = collection.mutable.ListBuffer("red","white","black")
