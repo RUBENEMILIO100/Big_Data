@@ -12,12 +12,11 @@
                                                        MATERIA:
                                                 Innovación Tecnológica
 
-TÍTULO:​ ​
-Diferentes formas de Comercialización 
-UNIDAD​ ​A​ ​EVALUAR:​
-​Unidad​ ​1
+                                                  UNIDAD A EVALUAR:
+                                                      Unidad 1
 
-NOMBRE Y NÚMERO DE CONTROL DEL ALUMNO:
-Diaz Martinez Ruben Emilio #15210791
-NOMBRE DEL MAESTRO (A):
-Dr. Octavio Romero Flores
+                                        NOMBRE Y NÚMERO DE CONTROL DEL ALUMNO:
+                                        Diaz Martinez Ruben Emilio #15210791
+                                                Flores Acosta Alfredo
+                                              NOMBRE DEL MAESTRO (A):
+                                           Dr. Jose Christian Romero Hernandes 
