@@ -146,6 +146,14 @@ list2.toSet
  var mutmap = collection.mutable.Map(("Jose", 20), ("Luis", 24), ("Susana", 27))
 ```
 
+ ```scala
+ 6 a. Print all map keys
+```
+
+ ```scala
+val names = collection.mutable.Map(("Jose", 20), ("Luis", 24), ("Ana", 23),("Susana",27))
+println(mutmap)
+```
 
 
 
