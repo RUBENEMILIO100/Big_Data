@@ -138,6 +138,14 @@ var list2 = Lista (1,3,3,4,6,7,3,7)
 list2.toSet
 ```
 
+ ```scala
+ 6. Create a mutable map called names containing the following "Jose", 20, "Luis", 24, "Ana", 23, "Susana", "27
+```
+
+ ```scala
+ var mutmap = collection.mutable.Map(("Jose", 20), ("Luis", 24), ("Susana", 27))
+```
+
 
 
 
