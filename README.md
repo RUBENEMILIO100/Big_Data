@@ -19,4 +19,4 @@
                                         Diaz Martinez Ruben Emilio #15210791
                                                 Flores Acosta Alfredo
                                               NOMBRE DEL MAESTRO (A):
-                                           Dr. Jose Christian Romero Hernandes 
+                                           Dr. Jose Christian Romero Hernandez
