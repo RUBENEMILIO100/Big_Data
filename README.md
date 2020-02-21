@@ -207,5 +207,19 @@ this must be an integer value with decimal points (Double)
         return n
     }
 // In any case, the following will be done
+else
+    {
+// The mathematical formula is more extensive, but I decided to do it in small parts
+// and then join it in the variable (j)
+ var p = ((1+(Math.sqrt(5)))/2)
+        var a = Math.pow(p,n)
+        var b = Math.pow((1-p),n)
+        var c = Math.sqrt(5)
+        var j = ((a-(b)))/(c)
+// The result of (j) will be the result upon return (return)
+    return(j)
+    }
 
+}
+funcion1(9)
 ```
