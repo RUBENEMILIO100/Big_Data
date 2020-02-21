@@ -83,7 +83,7 @@ Variable (var) the assigned value can be changed
 var my_tup = (2,4,5,1,2,3,3.1416,23)
 my_tup._7
 ```
-# Practices, Session 2.
+# Practices Unit_1, Session 2.
     1- Create a list called "list" with the elements "red", "white", "black".
     2- Add 5 more items to "list": "green", "yellow", "blue", "orange", "pearl".
     3- Bring the elements of "list" "green", "yellow", "blue".
@@ -162,9 +162,7 @@ println(mutmap)
 mutmap += ("Miguel" -> 23)
 println(mutmap)
 ```
-
-
-
+# Practices Unit_1 ,Mathematical Fibonacci models (Code) Session 3.
 
 
 
