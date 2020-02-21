@@ -113,6 +113,14 @@ list+= "pearl"
  list = "verde" ::"yellow" ::"blue" ::"orange" ::"pearl" :: list
 ```
 
+ ```scala
+ 3. Bring the "list" "green", "yellow", "blue" items
+```
+
+ ```scala
+ list slice (3,6)
+```
+
 
 
 
