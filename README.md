@@ -191,6 +191,21 @@ def funcion (n: Int): Int =
 funcion(9)
 ```
 
+ ```scala
+Second Algorithm
+In this second algorithm a function was added that after having performed
+the corresponding operations the function will give us a result (return)
+this must be an integer value with decimal points (Double)
+```
 
+ ```scala
+ def funcion1(n: Double): Double =
+{
+// If the number entered in the function is less than 2, the number entered will be returned
+   if (n<2)
+    {
+        return n
+    }
+// In any case, the following will be done
 
-
+```
