@@ -164,5 +164,15 @@ println(mutmap)
 ```
 # Practices Unit_1 ,Mathematical Fibonacci models (Code) Session 3.
 
+# Examples Bifunacci code.
+
+ ```scala
+First Algorithm
+In this first algorithm a function was added that after having performed,
+the corresponding operations the function will give us a result (return)
+this must be an integer value (Int)
+```
+
+
 
 
