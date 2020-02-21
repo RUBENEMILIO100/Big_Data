@@ -288,3 +288,23 @@ import org.apache.spark.sql.SparkSession
 val spark = SparkSession.builder().getOrCreate()
 val df = spark.read.option("header", "true").option("inferSchema","true")csv("CitiGroup2006_2008")
   ```
+  
+  ```scala
+//6.  
+codigo de la 6
+  ```
+```scala
+//7.  
+df.select(min("Close")).show()
+  ```
+  ```scala
+//8.  
+codigo de la 8
+  ```
+  
+  ```scala  
+//9.  
+df.select(sum("High")).show()
+  ``` 
+  
+  
