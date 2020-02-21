@@ -266,4 +266,25 @@ val df = spark.read.option("header", "true").option("inferSchema","true")csv("Ci
 df.select(avg($"Close")).show()
   ```
  
-
+ ```scala
+//2.  
+aqui pones el codigo de la 2
+  ```
+  
+ ```scala
+//3.  
+df.select(collect_set("Close")).show()
+  ```
+  
+ ```scala
+//4.  
+aqui pones el codigo de la 4
+  ```
+ 
+  ```scala
+//5.  
+df.select(last("Close")).show()
+import org.apache.spark.sql.SparkSession
+val spark = SparkSession.builder().getOrCreate()
+val df = spark.read.option("header", "true").option("inferSchema","true")csv("CitiGroup2006_2008")
+  ```
