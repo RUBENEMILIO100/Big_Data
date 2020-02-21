@@ -173,6 +173,24 @@ the corresponding operations the function will give us a result (return)
 this must be an integer value (Int)
 ```
 
+```scala
+def funcion (n: Int): Int = 
+{   
+// If the number entered in the function is less than 2, the number entered will be returned
+ if (n<2)
+    {
+        return n
+    }
+// In any case, the function will do a series of sums, and the result returns
+  else
+    {
+        return funcion(n-1) + funcion(n-2)
+    }
+}
+
+funcion(9)
+```
+
 
 
 
