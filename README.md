@@ -325,3 +325,23 @@ codigo de la 12
 //13. 
 df.select(var_pop("Close")).show()
   ``` 
+  
+   ```scala  
+//14. 
+codigo de la 14
+  ``` 
+
+```scala  
+//15. 
+df.select(reverse($"Date")).show()
+  ``` 
+ 
+ ```scala  
+//16. 
+codigo de la 16
+  ``` 
+  
+  ```scala  
+//17. 
+df.select(dayofmonth($"Date")).show()
+  ``` 
