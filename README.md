@@ -30,7 +30,11 @@
     Given the variable message = "Hola Luke soy tu padre!" use slilce to extract the sequence "Luke".
     What is the difference of a value and a variable in scala?.
     Given the tuple (2,4,5,1,2,3,3.1416,23) return the number 3.1416. 
-'''scala
+```scala
+val c = 6
+
+var radius = c/(2*3.1416)
+```
 // Assessment 1/Practice 1 // Diaz Martinez Ruben Emilio # 15210791
 // Flores Acosta Alfreso # 152103
 //1. Develop an algorithm in scala that calculates the radius of a circle
@@ -38,6 +42,6 @@
 val c = 6
 
 var radius = c/(2*3.1416)
-'''
+
 
 
