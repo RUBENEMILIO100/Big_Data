@@ -253,3 +253,12 @@ var c = 0
 }
 funcion2(9)
  ```
+ 
+ # Practices 4, Unit_1,basic functions for the variable "df".
+ 
+ ```scala
+//1.  
+df.select(avg($"Close")).show()
+  ```
+ 
+
