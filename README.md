@@ -24,15 +24,15 @@
                                          Dr. Jose Christian Romero Hernandez 
 # Practices, Session 1.
 
-    Develop an algorithm in scala that calculates the radius of a circle.
-    Develop an algorithm in scala that tells me if a number is a prime number.
-    Given the variable bird = "tweet", use string interpolation to print "I am writing a tweet".
-    Given the variable message = "Hola Luke soy tu padre!" use slilce to extract the sequence "Luke".
-    What is the difference of a value and a variable in scala?.
-    Given the tuple (2,4,5,1,2,3,3.1416,23) return the number 3.1416. 
+    1 Develop an algorithm in scala that calculates the radius of a circle.
+    2 Develop an algorithm in scala that tells me if a number is a prime number.
+    3 Given the variable bird = "tweet", use string interpolation to print "I am writing a tweet".
+    4 Given the variable message = "Hola Luke soy tu padre!" use slilce to extract the sequence "Luke".
+    5 What is the difference of a value and a variable in scala?.
+    6 Given the tuple (2,4,5,1,2,3,3.1416,23) return the number 3.1416. 
     
 ```scala
-Develop an algorithm in scala that calculates the radius of a circle.
+1- Develop an algorithm in scala that calculates the radius of a circle.
 ```
 ```scala
 val c = 6
@@ -40,7 +40,7 @@ val c = 6
 var radius = c/(2*3.1416)
 ```
 ```scala
-Develop an algorithm in scala that tells me if a number is a prime number.
+2- Develop an algorithm in scala that tells me if a number is a prime number.
 ```
 
 
