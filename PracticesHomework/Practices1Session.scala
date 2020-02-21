@@ -1,4 +1,5 @@
-// Assessment 1/Practica 1 // Diaz Martinez Ruben Emilio #15210791
+// Assessment 1/Practice 1 // Diaz Martinez Ruben Emilio # 15210791
+                           // Flores Acosta Alfreso # 152103
 //1. Develop an algorithm in scala that calculates the radius of a circle
 
 val c = 6
@@ -20,6 +21,7 @@ Inglés
 
 //3. Given the variable bird = "tweet", use string interpolation to
 // print "I am writing a tweet"
+
 var bird = "tweet"
 println ("Im writen a  " + bird)
 
