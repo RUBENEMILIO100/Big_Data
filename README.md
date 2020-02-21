@@ -256,6 +256,11 @@ funcion2(9)
  
  # Practices 4, Unit_1,basic functions for the variable "df".
  
+ ```scala 
+import org.apache.spark.sql.SparkSession
+val spark = SparkSession.builder().getOrCreate()
+val df = spark.read.option("header", "true").option("inferSchema","true")csv("CitiGroup2006_2008")
+ ```
  ```scala
 //1.  
 df.select(avg($"Close")).show()
