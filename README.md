@@ -230,6 +230,8 @@ funcion1(9)
 // In this third algorithm a function was added that after having performed
 // the corresponding operations the function will give us a result (return)
 // this must be an integer value (Int)
+ ```
+
 
 def funcion2(n: Int): Int =
 {
