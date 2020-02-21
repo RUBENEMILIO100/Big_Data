@@ -39,6 +39,9 @@ val c = 6
 
 var radius = c/(2*3.1416)
 ```
+```scala
+Develop an algorithm in scala that tells me if a number is a prime number.
+```
 
 
 
