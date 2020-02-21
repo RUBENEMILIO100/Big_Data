@@ -155,13 +155,11 @@ val names = collection.mutable.Map(("Jose", 20), ("Luis", 24), ("Ana", 23),("Sus
 println(mutmap)
 ```
  ```scala
- 6(b). Print all map keys
+ 6(b). Add the following value to the map ("Miguel", 23). 
 ```
 
  ```scala
- 
-val names = collection.mutable.Map(("Jose", 20), ("Luis", 24), ("Ana", 23),("Susana",27))
-
+mutmap += ("Miguel" -> 23)
 println(mutmap)
 ```
 
