@@ -22,7 +22,7 @@
                                          Flores Acosta Alfredo #1521
                                                 NOMBRE DEL MAESTRO (A):
                                          Dr. Jose Christian Romero Hernandez 
-# Practices, Session 1, Unit 1.
+# Practices, Session 1.
 
     Develop an algorithm in scala that calculates the radius of a circle.
     Develop an algorithm in scala that tells me if a number is a prime number.
