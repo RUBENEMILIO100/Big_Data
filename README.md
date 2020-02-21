@@ -68,6 +68,13 @@ var variable = "Hello Luke i am your father!"
 variable.slice(5,9)
 ```
 
+```scala
+5. What is the difference in value and a variable in scala?
+```
+```scala
+Value (val) is assigned a value and can no longer be changed
+Variable (var) the assigned value can be changed
+```
 
 
 
