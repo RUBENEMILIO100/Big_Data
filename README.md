@@ -345,3 +345,18 @@ codigo de la 16
 //17. 
 df.select(dayofmonth($"Date")).show()
   ``` 
+  
+  ```scala  
+//18. 
+codigo de la 18
+  ```
+
+```scala  
+//19. 
+df.select(month($"Date")).show()
+  ```
+  
+ ```scala  
+//20. 
+codigo de la 20
+  ```
