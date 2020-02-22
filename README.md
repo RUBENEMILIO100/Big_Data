@@ -268,7 +268,7 @@ df.select(avg($"Close")).show()
  
  ```scala
 //2.  
-aqui pones el codigo de la 2
+df.select(collect_list("Close")).show() 
   ```
   
  ```scala
@@ -278,7 +278,8 @@ df.select(collect_set("Close")).show()
   
  ```scala
 //4.  
-aqui pones el codigo de la 4
+df.select(first("Close")).show()
+
   ```
  
   ```scala
@@ -291,7 +292,7 @@ val df = spark.read.option("header", "true").option("inferSchema","true")csv("Ci
   
   ```scala
 //6.  
-codigo de la 6
+df.select(max("Close")).show()
   ```
 ```scala
 //7.  
@@ -299,7 +300,7 @@ df.select(min("Close")).show()
   ```
   ```scala
 //8.  
-codigo de la 8
+df.select(skewness("Low")).show()
   ```
   
   ```scala  
@@ -308,8 +309,8 @@ df.select(sum("High")).show()
   ``` 
   
  ```scala  
-//10.  
-codigo de la 10
+//10. 
+df.select(kurtosis("Low")).show()
   ``` 
   
 ```scala  
@@ -319,7 +320,7 @@ df.select(countDistinct("Volume")).show()
   
 ```scala  
 //12. 
-codigo de la 12
+df.select(mean("High")).show()
   ``` 
   ```scala  
 //13. 
@@ -328,7 +329,8 @@ df.select(var_pop("Close")).show()
   
    ```scala  
 //14. 
-codigo de la 14
+df.select(concat($"High", $"Low")).show()
+
   ``` 
 
 ```scala  
@@ -338,7 +340,8 @@ df.select(reverse($"Date")).show()
  
  ```scala  
 //16. 
-codigo de la 16
+df.select(current_date()).show()
+
   ``` 
   
   ```scala  
@@ -348,7 +351,8 @@ df.select(dayofmonth($"Date")).show()
   
   ```scala  
 //18. 
-codigo de la 18
+df.select(dayofweek($"Date")).show()
+
   ```
 
 ```scala  
@@ -358,5 +362,5 @@ df.select(month($"Date")).show()
   
  ```scala  
 //20. 
-codigo de la 20
+df.select(year($"Date")).show()
   ```
