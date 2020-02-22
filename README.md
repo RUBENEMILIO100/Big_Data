@@ -254,6 +254,60 @@ var c = 0
 funcion2(9)
  ```
  
+ 
+Fourth Algorithm
+In this fourth quarter, a function is agreed upon after having performed
+// the corresponding operations the function will give us a result (back)
+// this must be an integer value (Int)
+def funcion3(n: Int): Int =
+{
+    var a = 0
+    var b = 1
+ // A cycle (for) starts where k = 1, will start cycling until it becomes (n)
+// (n) represents the value that will be entered into the function
+for(k <- 1 to n)
+        {
+
+            b = b + a
+            a = b - a
+ // Depending on the cycle (for) the variables (b, a) will begin to change their result
+// until the end of the cycle (for)
+        }
+// The result will be returned with (return)
+       return(a)
+}
+funcion3(9)
+
+// Fifth Algorithm
+// In this fifth algorithm a function is performed that asks for an integer value (Int)
+// then return an integer value with decimals (Double)
+def funcion4(n: Int): Double =
+{
+// An array is created that starts from 0 to (n + 1)
+    val vector = Array.range (0, n + 1)
+// If the variable (n) is less than 2, that same variable is returned as a result
+    if (n <2)
+    {
+        return (n)
+    }
+// Otherwise the vector with space (0) will have a value of zero (0)
+// and the vector with space (1) will have a value of one (1)
+    else
+    {
+        vector (0) = 0
+        vector (1) = 1
+// Start cycling with a for the vector
+        for (k <- 2 to n)
+        {
+            vector (k) = vector (k-1) + vector (k-2)
+        }
+// The result will be the variable (n) according to the established vector
+        return vector (n)
+    }
+}
+function4 (9)
+
+ 
  # Practices 4, Unit_1,basic functions for the variable "df".
  
  ```scala 
