@@ -254,7 +254,7 @@ var c = 0
 funcion2(9)
  ```
  
- 
+```scala 
 Fourth Algorithm
 In this fourth quarter, a function is agreed upon after having performed
 // the corresponding operations the function will give us a result (back)
@@ -277,6 +277,7 @@ for(k <- 1 to n)
        return(a)
 }
 funcion3(9)
+ ```
 
 // Fifth Algorithm
 // In this fifth algorithm a function is performed that asks for an integer value (Int)
