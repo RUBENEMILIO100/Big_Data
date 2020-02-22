@@ -278,7 +278,7 @@ for(k <- 1 to n)
 }
 funcion3(9)
  ```
-
+```scala 
 // Fifth Algorithm
 // In this fifth algorithm a function is performed that asks for an integer value (Int)
 // then return an integer value with decimals (Double)
@@ -307,6 +307,7 @@ def funcion4(n: Int): Double =
     }
 }
 function4 (9)
+```
 
  
  # Practices 4, Unit_1,basic functions for the variable "df".
