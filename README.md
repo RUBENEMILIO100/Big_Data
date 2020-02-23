@@ -1,6 +1,5 @@
 # Big_Data Unit_1
                                                ```scala
-
                                            TECNOLÓGICO NACIONAL DE MÉXICO
                                           INSTITUTO TECNOLÓGICO DE TIJUANA
 
