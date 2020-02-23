@@ -432,4 +432,4 @@ df.select(year($"Date")).show()
   to the above, there is a need to establish the relationship 
   between two quantitative variables in a group of study subjects.
 
-       <a href="https://imgflip.com/gif/3q2wf8"><img src="https://i.imgflip.com/3q2wf8.gif" title="made at imgflip.com"/></a>
+   <a href="https://imgflip.com/gif/3q2wf8"><img src="https://i.imgflip.com/3q2wf8.gif" title="made at imgflip.com"/></a>
