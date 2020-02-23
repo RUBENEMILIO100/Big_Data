@@ -1,4 +1,5 @@
 # Big_Data Unit_1
+                                               ```scala
 
                                            TECNOLÓGICO NACIONAL DE MÉXICO
                                           INSTITUTO TECNOLÓGICO DE TIJUANA
@@ -21,7 +22,8 @@
                                          Diaz Martinez Ruben Emilio #15210791
                                          Flores Acosta Alfredo #15210331
                                                 NOMBRE DEL MAESTRO (A):
-                                         Dr. Jose Christian Romero Hernandez 
+                                         Dr. Jose Christian Romero Hernandez
+                                         ```
 # Practices1, Session 1.
 
     1- Develop an algorithm in scala that calculates the radius of a circle.
