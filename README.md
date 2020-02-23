@@ -432,3 +432,4 @@ df.select(year($"Date")).show()
   to the above, there is a need to establish the relationship 
   between two quantitative variables in a group of study subjects.
 
+                                                  https://www.google.com/url?sa=i&url=https%3A%2F%2Felultimoversodefermat.wordpress.com%2F2019%2F03%2F11%2Fla-regresion-lineal%2F&psig=AOvVaw0wAyOWQJyeEAQS1PAyyfQo&ust=1582584803656000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCICXofrh6OcCFQAAAAAdAAAAABAD
