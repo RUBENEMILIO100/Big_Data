@@ -425,11 +425,10 @@ df.select(year($"Date")).show()
   # Homework_1 Unit_1, Pearson correlation
   
               
-             The knowledge circulates from the general to the particular
-            , 
+            The knowledge circulates from the general to the particular, 
             in this sense the explanation of new phenomena canbe studied 
             by the relationship it has with events of the same phenomenon,
             which is what is frequently done in the field of research. Due
-            to the above, there is a need to establish the relationship
+            to the above, there is a need to establish the relationship 
             between two quantitative variables in a group of study subjects.
 
