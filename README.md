@@ -436,4 +436,4 @@ The PPMC is not able to tell the difference between dependent variables and inde
 
 Pearson correlation is used in thousands of real life situations. For example, scientists in China wanted to know if there was a relationship between how weedy rice populations are different genetically. The goal was to find out the evolutionary potential of the rice. Pearson’s correlation between the two groups was analyzed. It showed a positive Pearson Product Moment correlation of between 0.783 and 0.895 for weedy rice populations. This figure is quite high, which suggested a fairly strong relationship.
 
-<img src="https://i2.wp.com/media.giphy.com/media/1kTNRve3ou82rqpSC2/giphy.gif?resize=1400%2C9999&amp;ssl=1" alt="https://i2.wp.com/media.giphy.com/media/1kTNRve3ou82rqpSC2/giphy.gif?resize=1400%2C9999&amp;ssl=1">
+  <img src="https://i2.wp.com/media.giphy.com/media/1kTNRve3ou82rqpSC2/giphy.gif?resize=1400%2C9999&amp;ssl=1"  alt="https://i2.wp.com/media.giphy.com/media/1kTNRve3ou82rqpSC2/giphy.gif?resize=1400%2C9999&amp;ssl=1">
