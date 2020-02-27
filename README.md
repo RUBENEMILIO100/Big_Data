@@ -460,8 +460,9 @@ Absolute Difference = | 4 - 9 | = 15
 Develop a function called diagonalDifference is a scrip with the programming language
 Scala It must return an integer that represents the difference of the absolute diagonal.
 
-// Diaz Martinez Ruben Emilio
-//Flores Acosta Alfredo 
+Diaz Martinez Ruben Emilio
+
+Flores Acosta Alfredo 
 
 ```scala  
 val  arr = (( 11 , 2 , 4 ), ( 4 , 5 , 6 ), ( 10 , 8 , - 12 ))
