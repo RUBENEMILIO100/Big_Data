@@ -34,7 +34,15 @@
 
 <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_1/README.md#practices1-session-1">Practice 1</a>  
 <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_1/README.md#practices-2-unit_1-session-2">Practice 2</a>  
-<a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_1/README.md#practices-3-unit_1-mathematical-fibonacci-models-code-session-3">Practice 3</a>  
+<a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_1/README.md#practices-3-unit_1-mathematical-fibonacci-models-code-session-3">Practice 3</a> 
+<a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_1/README.md#practices-4-unit_1basic-functions-for-the-variable-df">Practice 4</a>
+<a href="">Practice 5</a> 
+<a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_1/README.md#homework_1-unit_1-pearson-correlation
+">Homework1</a>  
+
+
+
+
 
                                          
                                          
