@@ -381,7 +381,6 @@ df.select(collect_set("Close")).show()
 df.select(first("Close")).show()
 
   ```
-  # Functions for groups "df".
 
   ```scala
 //5.  
@@ -466,6 +465,7 @@ df.select(month($"Date")).show()
 df.select(year($"Date")).show()
 
   ```
+  # Functions for groups "df".
   
   ```scala
   import org.apache.spark.sql.SparkSession
