@@ -481,7 +481,7 @@ Pearson correlation is used in thousands of real life situations. For example, s
 <img src="https://i2.wp.com/media.giphy.com/media/1kTNRve3ou82rqpSC2/giphy.gif?resize=1400%2C9999&amp;ssl=1"    alt="https://i2.wp.com/media.giphy.com/media/1kTNRve3ou82rqpSC2/giphy.gif?resize=1400%2C9999&amp;ssl=1">
 
 
-  # Variance formula 
+  # Homework_2 Unit_1,Variance formula 
   
 The Pearson coefficient of variation (r) measures the variation of the data with respect to the average, regardless of the units in which they are.
 
