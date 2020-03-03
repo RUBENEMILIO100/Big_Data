@@ -481,7 +481,14 @@ Pearson correlation is used in thousands of real life situations. For example, s
 <img src="https://i2.wp.com/media.giphy.com/media/1kTNRve3ou82rqpSC2/giphy.gif?resize=1400%2C9999&amp;ssl=1"    alt="https://i2.wp.com/media.giphy.com/media/1kTNRve3ou82rqpSC2/giphy.gif?resize=1400%2C9999&amp;ssl=1">
 
 
+  # Variance formula 
+  
+The Pearson coefficient of variation (r) measures the variation of the data with respect to the average, regardless of the units in which they are.
 
+
+The coefficient of variation takes values ​​between 0 and 1. If the coefficient is close to 0, it means that there is little variability in the data and it is a very compact sample. On the other hand, if they tend to 1 it is a very dispersed sample.
+
+To easily interpret the coefficient, we can multiply it by one hundred to have it as a percentage.
 
 # Exam 1
 
