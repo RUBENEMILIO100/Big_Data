@@ -23,6 +23,19 @@
                                                 NOMBRE DEL MAESTRO (A):
                                          Dr. Jose Christian Romero Hernandez
                                          
+                                         
+    
+
+<a href="http://sitio.com/pagina.html#una-id">Practices 3,"</a>                   
+                                         
+                                         
+                                         
+                                         
+                                         
+                                         
+                                         
+                                         
+                                         
 # Practices1, Session 1.
 
     1- Develop an algorithm in scala that calculates the radius of a circle.
