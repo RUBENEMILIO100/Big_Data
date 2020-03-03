@@ -38,7 +38,11 @@
 
 <a href="">Practice 5</a> 
 
-<a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_1/README.md#practices1-session-1">Homework1</a>  
+<a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_1/README.md#practices1-session-1">Homework1</a>
+
+<a href="">Homework2</a>
+
+<a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_1/README.md#exam-1">Exam 1</a> 
 
 
 
