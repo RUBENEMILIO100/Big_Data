@@ -26,7 +26,7 @@
                                          
     
 
-<a href="http://sitio.com/pagina.html#una-id">Practices 3,"</a>                   
+<a href="Practices 3,">Practice 3"</a>                   
                                          
                                          
                                          
