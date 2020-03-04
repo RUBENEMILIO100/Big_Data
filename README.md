@@ -69,11 +69,22 @@
 # Practices1, Session 1.
 
     1- Develop an algorithm in scala that calculates the radius of a circle.
+     " In this practice only the radius will be calculated by means of values that will be integrated, that will be explained in the code this is exercise one" 
+     
     2- Develop an algorithm in scala that tells me if a number is a prime number.
+    "In this practice we use lists arrays and mutable maps, lists are declared as a variable of type list, to the lists you can add more elements and can be ordered in different ways"
+    
     3- Given the variable bird = "tweet", use string interpolation to print "I am writing a tweet".
+    " In this practice 6 algorithms of the Fibonacci sequence were performed. The Fibonacci sequence is done by always adding the last 2 numbers (All the numbers present in the sequence are called Fibonacci numbers) and existing mathematical algorithms are used"
+    
     4- Given the variable message = "Hola Luke soy tu padre!" use slilce to extract the sequence "Luke".
+    " In this practice we import a spark sql session we create a variable for the spark session and then load a dataset to later use basic functions in the dataset obtaining very interesting results"
+    
     5- What is the difference of a value and a variable in scala?.
-    6- Given the tuple (2,4,5,1,2,3,3.1416,23) return the number 3.1416. 
+    " Is a static number and the order one have a difeten value caracteres"
+    
+    6- Given the tuple (2,4,5,1,2,3,3.1416,23) return the number 3.1416.
+    " "
     
 ```scala
 1- Develop an algorithm in scala that calculates the radius of a circle.
