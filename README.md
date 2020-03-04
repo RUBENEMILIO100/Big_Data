@@ -140,11 +140,23 @@ my_tup._7
 ```
 # Practices 2, Unit_1, Session 2.
     1- Create a list called "list" with the elements "red", "white", "black".
+    " Just call de color they mey have a value codition the requerie"
+    
     2- Add 5 more items to "list": "green", "yellow", "blue", "orange", "pearl".
+    " Add 5 items and the make litle list "
+    
     3- Bring the elements of "list" "green", "yellow", "blue".
+    " Call elements in the list they just call"
+    
     4- Create a number array in the 1-1000 range in 5-in-5 steps.
+    "new arra in the list adn called in a list"
+    
     5- What are the unique elements of the List (1,3,3,4,6,7,3,7) use conversion to sets.
+    " just a convertion in the list and called a new list "
+    
     6- Create a mutable map called "names" that contains the following "Jose", 20, "Luis", 24, "Ana", 23, "Susana", "27".
+    "Call the names in the list and ther followin whit name "
+    
     7- Print all map keys.
     8- Add the following value to the map ("Miguel", 23).
     
