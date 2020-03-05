@@ -622,6 +622,105 @@ def  DAbsoluta (arre: (( Int , Int , Int ), ( Int , Int , Int ), ( Int , Int , I
 DAbsoluta(arr)
 
   ```
+  
+# Exam 2_Unit1
+
+# Instructions:
+
+Answer the following questions with Spark DataFrames using Netflix_2011_2016.csv CSV
+Then answer the functions seen in class for each question and execute it later.
+
+
+Instructions for DataFrame are used in Spark Scala
+Code
+
+ ```scala
+ // Diaz Martinez Ruben Emilo # 15210791
+// Fores Acosta Alfredo # 15210331
+
+// 1- Start a simple Spark session
+
+import org.apache.spark.sql.SparkSession
+
+val spark = SparkSession.builder (). getOrCreate ()
+
+// 2- Load the Netflix Stock CSV file, have Spark infer the data types
+
+val df = spark.read.option ("header", "true"). option ("inferSchema", "true") csv ("Netflix_2011_2016.csv")
+
+// 3- What are the names of the columns?
+
+df.show ()
+
+// 4- How is the scheme?
+
+df.printSchema ()
+
+
+// 5- Print the first 5 columns
+
+df.head (5)
+
+ // 6- Use describe () to learn about the DataFrame
+
+df.describe (). show ()
+
+// 7- create a data frame
+
+val df2 = df.withColumn ("HV Ratio", df ("High") / df ("Volume"))
+
+// 8- What day had the highest peak in the column?
+
+df.select (max ("Close")). show ()
+
+// 9 the Close column means how I close the bag that day
+//: It is the closing value of netflix shares.
+
+// 10- What is the maximum and minimum of the volume column
+
+df.select (max ("Volume")). show ()
+df.select (min ("Volume")). show ()
+
+// 11- with scala syntaxiyx answer the following
+
+// A) How many days was the column below 600 <
+
+df.filter ($ "Close" <600) .count ()
+
+// B) what percentage of the time was the higth> 500
+
+val res = df.select ($ "High"). filter ($ "High"> 500) .count ()
+val by = (res * 1.0) /100.0
+
+// C What is the correlation of pearson between the column high and volume
+
+df.select (corr ("High", "Volume")). show ()
+
+// D What is the maximum of the high column per year
+
+// The year is obtained and added in a new column
+val df2 = df.withColumn ("Year", year (df ("Date")))
+
+// It is grouped to the years
+val dfmax = df2.groupBy ("Year"). max ()
+
+// The maximum highs per year ordered are taken out
+dfmax.select ($ "Year", $ "max (High)"). orderBy ("Year"). show ()
+
+
+// 11e What is the average of the close column for each calendar month
+
+// The month is taken from the date and added as a new column
+val df3 = df.withColumn ("Month", month (df ("Date")))
+
+// The month is grouped with close
+val df3prom = df3.select ($ "Month", $ "Close"). groupBy ("Month"). mean ()
+
+// The average is taken out and shown in order by month
+df3prom.select ($ "Month", $ "avg (Close)"). orderBy ("Month"). show ()
+
+ ```
+
 
 
 
