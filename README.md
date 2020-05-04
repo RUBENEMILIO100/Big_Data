@@ -319,6 +319,8 @@ Pipelines and PipelineModels help to ensure that training and test data go throu
  <img src="https://3.bp.blogspot.com/-bVP5wzu5br4/TftMS5ty1BI/AAAAAAAAAJA/PIxhR7_wwNM/s1600/Matrix.gif" title="ML Pipeline Example" alt="ML Pipeline Example" width="23%"> 
   
  When we get the data, after data cleaning, pre-processing and wrangling, the first step we do is to feed it to an outstanding model and of course, get output in probabilities. But hold on! How in the hell can we measure the effectiveness of our model. Better the effectiveness, better the performance and that’s exactly what we want. And it is where the Confusion matrix comes into the limelight. Confusion Matrix is a performance measurement for machine learning classification.
+ 
+ <img class="nv sp s t u gy ai hi" srcset="https://miro.medium.com/max/552/1*va6qO1E_MK9Yg8PaCghy3A.jpeg 276w, https://miro.medium.com/max/1104/1*va6qO1E_MK9Yg8PaCghy3A.jpeg 552w, https://miro.medium.com/max/1280/1*va6qO1E_MK9Yg8PaCghy3A.jpeg 640w, https://miro.medium.com/max/1400/1*va6qO1E_MK9Yg8PaCghy3A.jpeg 700w" sizes="700px" role="presentation" src="https://miro.medium.com/max/1280/1*va6qO1E_MK9Yg8PaCghy3A.jpeg" width="1280" height="720">
 
 This blog aims to answer following questions:
 
@@ -365,3 +367,11 @@ Interpretation: You predicted negative and it’s false.
 You predicted that a woman is not pregnant but she actually is.
 
 Just Remember, We describe predicted values as Positive and Negative and actual values as True and False.
+
+# References 
+
+ML Pipelines - Spark 2.4.5 Documentation. (s. f.). Recuperado 4 de mayo de 2020, de https://spark.apache.org/docs/latest/ml-pipeline.html
+
+
+Narkhede, S. (2019, mayo 9). Understanding Confusion Matrix. Recuperado 4 de mayo de 2020, de https://towardsdatascience.com/understanding-confusion-matrix-a9ad42dcfd62 
+
