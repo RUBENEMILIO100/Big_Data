@@ -316,6 +316,6 @@ Pipelines and PipelineModels help to ensure that training and test data go throu
 
 # Understanding Confusion Matrix 
 
- <img src="https://3.bp.blogspot.com/-bVP5wzu5br4/TftMS5ty1BI/AAAAAAAAAJA/PIxhR7_wwNM/s1600/Matrix.gif" title="ML Pipeline Example" alt="ML Pipeline Example" width="15%"> 
+ <img src="https://3.bp.blogspot.com/-bVP5wzu5br4/TftMS5ty1BI/AAAAAAAAAJA/PIxhR7_wwNM/s1600/Matrix.gif" title="ML Pipeline Example" alt="ML Pipeline Example" width="23%"> 
   
  
