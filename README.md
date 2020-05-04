@@ -316,11 +316,11 @@ Pipelines and PipelineModels help to ensure that training and test data go throu
 
 # Understanding Confusion Matrix 
 
- <img src="https://3.bp.blogspot.com/-bVP5wzu5br4/TftMS5ty1BI/AAAAAAAAAJA/PIxhR7_wwNM/s1600/Matrix.gif" title="ML Pipeline Example" alt="ML Pipeline Example" width="23%"> 
-  
  When we get the data, after data cleaning, pre-processing and wrangling, the first step we do is to feed it to an outstanding model and of course, get output in probabilities. But hold on! How in the hell can we measure the effectiveness of our model. Better the effectiveness, better the performance and that’s exactly what we want. And it is where the Confusion matrix comes into the limelight. Confusion Matrix is a performance measurement for machine learning classification.
  
  <img class="nv sp s t u gy ai hi" srcset="https://miro.medium.com/max/552/1*va6qO1E_MK9Yg8PaCghy3A.jpeg 276w, https://miro.medium.com/max/1104/1*va6qO1E_MK9Yg8PaCghy3A.jpeg 552w, https://miro.medium.com/max/1280/1*va6qO1E_MK9Yg8PaCghy3A.jpeg 640w, https://miro.medium.com/max/1400/1*va6qO1E_MK9Yg8PaCghy3A.jpeg 700w" sizes="700px" role="presentation" src="https://miro.medium.com/max/1280/1*va6qO1E_MK9Yg8PaCghy3A.jpeg" width="1280" height="720">
+ 
+  <img src="https://3.bp.blogspot.com/-bVP5wzu5br4/TftMS5ty1BI/AAAAAAAAAJA/PIxhR7_wwNM/s1600/Matrix.gif" title="ML Pipeline Example" alt="ML Pipeline Example" width="23%"> 
 
 This blog aims to answer following questions:
 
