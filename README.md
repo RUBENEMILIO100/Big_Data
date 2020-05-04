@@ -316,4 +316,4 @@ Pipelines and PipelineModels help to ensure that training and test data go throu
 
 # Confusion Matrix 
 
-<img style="width: 320px; height: 240px; display: block;" alt="Create animated mobile wallpaper or screensaver: The Matrix" class="detail__media__img-highres  js-detail-img  js-detail-img-high" src="//external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-bVP5wzu5br4%2FTftMS5ty1BI%2FAAAAAAAAAJA%2FPIxhR7_wwNM%2Fs1600%2FMatrix.gif&amp;f=1&amp;nofb=1">
+https://3.bp.blogspot.com/-bVP5wzu5br4/TftMS5ty1BI/AAAAAAAAAJA/PIxhR7_wwNM/s1600/Matrix.gif
