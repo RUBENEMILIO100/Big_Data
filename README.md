@@ -89,8 +89,6 @@ where:
 
 This algorithm is called ‘naive’ because it assumes that all the variables are independent of each other, which is a naive assumption to make in real-world examples.
 
-<img class=" ls-is-cached lazyloaded" src="/wp-content/uploads/2019/01/Naive-Bayes.png" data-src="/wp-content/uploads/2019/01/Naive-Bayes.png" alt="Naive-Bayes"> 
-
 Naive-Bayes
 
 Figure 4: Using Naive Bayes to predict the status of ‘play’ using the variable ‘weather’.
@@ -117,6 +115,8 @@ Unsupervised learning algorithms
 The Apriori algorithm is used in a transactional database to mine frequent item sets and then generate association rules. It is popularly used in market basket analysis, where one checks for combinations of products that frequently co-occur in the database. In general, we write the association rule for ‘if a person purchases item X, then he purchases item Y’ as : X -> Y.
 
 Example: if a person purchases milk and sugar, then she is likely to purchase coffee powder. This could be written in the form of an association rule as: {milk,sugar} -> coffee powder. Association rules are generated after crossing the threshold for support and confidence.
+
+<img class=" ls-is-cached lazyloaded" src="https://www.dataquest.io/wp-content/uploads/2018/04/Formulae-for-support.png" data-src="https://www.dataquest.io/wp-content/uploads/2018/04/Formulae-for-support.png" alt="Formulae-for-support"> 
 
 Formulae-for-support
 
