@@ -14,7 +14,7 @@ TECNOLÓGICO NACIONAL DE MÉXICO
                                                    Datos Masivos
                                           
                                                   UNIDAD A EVALUAR:
-                                                      Unidad 1
+                                                      Unidad 2
 
                                          NOMBRE Y NÚMERO DE CONTROL DEL ALUMNO:
                                          Diaz Martinez Ruben Emilio #15210791
