@@ -150,8 +150,6 @@ Each component is a linear combination of the original variables and is orthogon
 
 The first principal component captures the direction of the maximum variability in the data. The second principal component captures the remaining variance in the data but has variables uncorrelated with the first component. Similarly, all successive principal components (PC3, PC4 and so on) capture the remaining variance while being uncorrelated with the previous component.
 
-<img class=" ls-is-cached lazyloaded" src="/wp-content/uploads/2019/01/PCA.png" data-src="/wp-content/uploads/2019/01/PCA.png" alt="PCA">
-
 PCA
 
 Figure 7: The 3 original variables (genes) are reduced to 2 new variables termed principal components (PC’s). Source
@@ -180,7 +178,9 @@ Adaboost stands for Adaptive Boosting. Bagging is a parallel ensemble because ea
 
 Bagging mostly involves ‘simple voting’, where each classifier votes to obtain a final outcome– one that is determined by the majority of the parallel models; boosting involves ‘weighted voting’, where each classifier votes to obtain a final outcome which is determined by the majority– but the sequential models were built by assigning greater weights to misclassified instances of the previous models.
 
-Adaboost
+<img class=" ls-is-cached lazyloaded" src="/wp-content/uploads/2019/01/Adaboost.jpeg" data-src="/wp-content/uploads/2019/01/Adaboost.jpeg" alt="Adaboost">
+
+
 
 
                                      
