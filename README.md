@@ -318,4 +318,18 @@ Pipelines and PipelineModels help to ensure that training and test data go throu
 
  <img src="https://3.bp.blogspot.com/-bVP5wzu5br4/TftMS5ty1BI/AAAAAAAAAJA/PIxhR7_wwNM/s1600/Matrix.gif" title="ML Pipeline Example" alt="ML Pipeline Example" width="23%"> 
   
- 
+ When we get the data, after data cleaning, pre-processing and wrangling, the first step we do is to feed it to an outstanding model and of course, get output in probabilities. But hold on! How in the hell can we measure the effectiveness of our model. Better the effectiveness, better the performance and that’s exactly what we want. And it is where the Confusion matrix comes into the limelight. Confusion Matrix is a performance measurement for machine learning classification.
+
+This blog aims to answer following questions:
+
+  1-  What the confusion matrix is and why you need it?
+  2- How to calculate Confusion Matrix for a 2-class classification problem?
+
+Today, let’s understand the confusion matrix once and for all.
+
+What is Confusion Matrix and why you need it?
+
+Well, it is a performance measurement for machine learning classification problem where output can be two or more classes. It is a table with 4 different combinations of predicted and actual values.
+
+
+<img class="nv sp s t u gy ai hi" srcset="https://miro.medium.com/max/552/1*Z54JgbS4DUwWSknhDCvNTQ.png 276w, https://miro.medium.com/max/712/1*Z54JgbS4DUwWSknhDCvNTQ.png 356w" sizes="356px" role="presentation" src="https://miro.medium.com/max/356/1*Z54JgbS4DUwWSknhDCvNTQ.png" width="356" height="267">
