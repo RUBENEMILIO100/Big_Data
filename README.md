@@ -33,7 +33,7 @@ Linear-Regression
 
 Figure 1: Linear Regression is represented as a line in the form of y = a + bx. Source
 
-                                                            <img  src="https://www.dataquest.io/wp-content/uploads/2018/04/Linear-Regression.gif" data-src="https://www.dataquest.io/wp-content/uploads/2018/04/Linear-Regression.gif" alt="Linear-Regression">”/>
+   <img class=" lazyloaded" src="https://www.dataquest.io/wp-content/uploads/2018/04/Linear-Regression.gif" data-src="https://www.dataquest.io/wp-content/uploads/2018/04/Linear-Regression.gif" alt="Linear-Regression">
 
 In Linear Regression, the relationship between the input variables (x) and output variable (y) is expressed as an equation of the form y = a + bx. Thus, the goal of linear regression is to find out the values of coefficients a and b. Here, a is the intercept and b is the slope of the line.
 
