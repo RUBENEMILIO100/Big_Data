@@ -23,9 +23,9 @@
                                                 NOMBRE DEL MAESTRO (A):
                                          Dr. Jose Christian Romero Hernandez
                                     
-# HOMEWORK # 1 Main types of machine learning algorithms    
+# HOMEWORK # 1 Main types of machine learning algorithms.   
 
-1. Linear Regression
+# 1. Linear Regression
 
 In machine learning, we have a set of input variables (x) that are used to determine an output variable (y). A relationship exists between the input variables and the output variable. The goal of ML is to quantify this relationship.
 
@@ -38,7 +38,8 @@ Figure 1: Linear Regression is represented as a line in the form of y = a + bx. 
 In Linear Regression, the relationship between the input variables (x) and output variable (y) is expressed as an equation of the form y = a + bx. Thus, the goal of linear regression is to find out the values of coefficients a and b. Here, a is the intercept and b is the slope of the line.
 
 Figure 1 shows the plotted x and y values for a data set. The goal is to fit a line that is nearest to most of the points. This would reduce the distance (‘error’) between the y value of a data point and the line.
-2. Logistic Regression
+
+# 2. Logistic Regression
 
 Linear regression predictions are continuous values (i.e., rainfall in cm), logistic regression predictions are discrete values (i.e., whether a student passed/failed) after applying a transformation function.
 
@@ -60,7 +61,8 @@ In Figure 2, to determine whether a tumor is malignant or not, the default varia
 The logistic regression equation P(x) = e ^ (b0 +b1x) / (1 + e(b0 + b1x)) can be transformed into ln(p(x) / 1-p(x)) = b0 + b1x.
 
 The goal of logistic regression is to use the training data to find the values of coefficients b0 and b1 such that it will minimize the error between the predicted outcome and the actual outcome. These coefficients are estimated using the technique of Maximum Likelihood Estimation.
-3. CART
+
+# 3. CART
 
 Classification and Regression Trees (CART) are one implementation of Decision Trees.
 
@@ -74,7 +76,7 @@ Decision-Tree-Diagram-machine-learning
 
 Figure 3: Parts of a decision tree. Source
 
-4. Naïve Bayes
+# 4. Naïve Bayes
 
 To calculate the probability that an event will occur, given that another event has already occurred, we use Bayes’s Theorem. To calculate the probability of hypothesis(h) being true, given our prior knowledge(d), we use Bayes’s Theorem as follows:
 
@@ -102,7 +104,8 @@ To determine the outcome play = ‘yes’ or ‘no’ given the value of variabl
 -> P(no|sunny)= (P(sunny|no) * P(no)) / P(sunny) = (2/5 * 5/14 ) / (5/14) = 0.40
 
 Thus, if the weather = ‘sunny’, the outcome is play = ‘yes’.
-5. KNN
+
+# 5. KNN
 
 The K-Nearest Neighbors algorithm uses the entire data set as the training set, rather than splitting the data set into a training set and test set.
 
@@ -110,7 +113,8 @@ When an outcome is required for a new data instance, the KNN algorithm goes thro
 
 The similarity between instances is calculated using measures such as Euclidean distance and Hamming distance.
 Unsupervised learning algorithms
-6. Apriori
+
+# 6. Apriori
 
 The Apriori algorithm is used in a transactional database to mine frequent item sets and then generate association rules. It is popularly used in market basket analysis, where one checks for combinations of products that frequently co-occur in the database. In general, we write the association rule for ‘if a person purchases item X, then he purchases item Y’ as : X -> Y.
 
@@ -123,7 +127,8 @@ Formulae-for-support
 Figure 5: Formulae for support, confidence and lift for the association rule X->Y.
 
 The Support measure helps prune the number of candidate item sets to be considered during frequent item set generation. This support measure is guided by the Apriori principle. The Apriori principle states that if an itemset is frequent, then all of its subsets must also be frequent.
-7. K-means
+
+# 7. K-means
 
 K-means is an iterative algorithm that groups similar data into clusters.It calculates the centroids of k clusters and assigns a data point to that cluster having least distance between its centroid and the data point.
 
@@ -142,7 +147,8 @@ Next, reassign each point to the closest cluster centroid. In the figure above, 
 Then, calculate centroids for the new clusters. The old centroids are gray stars; the new centroids are the red, green, and blue stars.
 
 Finally, repeat steps 2-3 until there is no switching of points from one cluster to another. Once there is no switching for 2 consecutive steps, exit the K-means algorithm.
-8. PCA
+
+# 8. PCA
 
 Principal Component Analysis (PCA) is used to make data easy to explore and visualize by reducing the number of variables. This is done by capturing the maximum variance in the data into a new coordinate system with axes called ‘principal components’.
 
@@ -159,7 +165,8 @@ Ensemble learning techniques:
 Ensembling means combining the results of multiple learners (classifiers) for improved results, by voting or averaging. Voting is used during classification and averaging is used during regression. The idea is that ensembles of learners perform better than single learners.
 
 There are 3 types of ensembling algorithms: Bagging, Boosting and Stacking. We are not going to cover ‘stacking’ here, but if you’d like a detailed explanation of it, here’s a solid introduction from Kaggle.
-9. Bagging with Random Forests
+
+# 9. Bagging with Random Forests
 
 The first step in bagging is to create multiple models with data sets created using the Bootstrap Sampling method. In Bootstrap Sampling, each generated training set is composed of random subsamples from the original data set.
 
@@ -173,14 +180,10 @@ The number of features to be searched at each split point is specified as a para
 
 Thus, in bagging with Random Forest, each tree is constructed using a random sample of records and each split is constructed using a random sample of predictors.
 
-10. Boosting with AdaBoost
+# 10. Boosting with AdaBoost
 
 Adaboost stands for Adaptive Boosting. Bagging is a parallel ensemble because each model is built independently. On the other hand, boosting is a sequential ensemble where each model is built based on correcting the misclassifications of the previous model.
 
 Bagging mostly involves ‘simple voting’, where each classifier votes to obtain a final outcome– one that is determined by the majority of the parallel models; boosting involves ‘weighted voting’, where each classifier votes to obtain a final outcome which is determined by the majority– but the sequential models were built by assigning greater weights to misclassified instances of the previous models.
 
-<img class=" ls-is-cached lazyloaded" src="/wp-content/uploads/2019/01/Adaboost.jpeg" data-src="/wp-content/uploads/2019/01/Adaboost.jpeg" alt="Adaboost">
-
-
-
-                                     
+# Vectors & RMSE.   
