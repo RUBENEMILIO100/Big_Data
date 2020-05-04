@@ -333,3 +333,35 @@ Well, it is a performance measurement for machine learning classification proble
 
 
 <img class="nv sp s t u gy ai hi" srcset="https://miro.medium.com/max/552/1*Z54JgbS4DUwWSknhDCvNTQ.png 276w, https://miro.medium.com/max/712/1*Z54JgbS4DUwWSknhDCvNTQ.png 356w" sizes="356px" role="presentation" src="https://miro.medium.com/max/356/1*Z54JgbS4DUwWSknhDCvNTQ.png" width="356" height="267">
+
+It is extremely useful for measuring Recall, Precision, Specificity, Accuracy and most importantly AUC-ROC Curve.
+
+Let’s understand TP, FP, FN, TN in terms of pregnancy analogy.
+
+<img class="nv sp s t u gy ai hi" srcset="https://miro.medium.com/max/552/1*7EYylA6XlXSGBCF77j_rOA.png 276w, https://miro.medium.com/max/924/1*7EYylA6XlXSGBCF77j_rOA.png 462w" sizes="462px" role="presentation" src="https://miro.medium.com/max/462/1*7EYylA6XlXSGBCF77j_rOA.png" width="462" height="340">
+
+True Positive:
+
+Interpretation: You predicted positive and it’s true.
+
+You predicted that a woman is pregnant and she actually is.
+
+True Negative:
+
+Interpretation: You predicted negative and it’s true.
+
+You predicted that a man is not pregnant and he actually is not.
+
+False Positive: (Type 1 Error)
+
+Interpretation: You predicted positive and it’s false.
+
+You predicted that a man is pregnant but he actually is not.
+
+False Negative: (Type 2 Error)
+
+Interpretation: You predicted negative and it’s false.
+
+You predicted that a woman is not pregnant but she actually is.
+
+Just Remember, We describe predicted values as Positive and Negative and actual values as True and False.
