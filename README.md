@@ -150,6 +150,8 @@ Each component is a linear combination of the original variables and is orthogon
 
 The first principal component captures the direction of the maximum variability in the data. The second principal component captures the remaining variance in the data but has variables uncorrelated with the first component. Similarly, all successive principal components (PC3, PC4 and so on) capture the remaining variance while being uncorrelated with the previous component.
 
+<img class=" ls-is-cached lazyloaded" src="/wp-content/uploads/2019/01/PCA.png" data-src="/wp-content/uploads/2019/01/PCA.png" alt="PCA">
+
 PCA
 
 Figure 7: The 3 original variables (genes) are reduced to 2 new variables termed principal components (PC’s). Source
