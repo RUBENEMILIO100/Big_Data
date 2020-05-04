@@ -172,6 +172,7 @@ This is where Random Forests enter into it. Unlike a decision tree, where each n
 The number of features to be searched at each split point is specified as a parameter to the Random Forest algorithm.
 
 Thus, in bagging with Random Forest, each tree is constructed using a random sample of records and each split is constructed using a random sample of predictors.
+
 10. Boosting with AdaBoost
 
 Adaboost stands for Adaptive Boosting. Bagging is a parallel ensemble because each model is built independently. On the other hand, boosting is a sequential ensemble where each model is built based on correcting the misclassifications of the previous model.
@@ -179,7 +180,6 @@ Adaboost stands for Adaptive Boosting. Bagging is a parallel ensemble because ea
 Bagging mostly involves ‘simple voting’, where each classifier votes to obtain a final outcome– one that is determined by the majority of the parallel models; boosting involves ‘weighted voting’, where each classifier votes to obtain a final outcome which is determined by the majority– but the sequential models were built by assigning greater weights to misclassified instances of the previous models.
 
 <img class=" ls-is-cached lazyloaded" src="/wp-content/uploads/2019/01/Adaboost.jpeg" data-src="/wp-content/uploads/2019/01/Adaboost.jpeg" alt="Adaboost">
-
 
 
 
