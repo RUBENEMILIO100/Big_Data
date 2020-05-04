@@ -298,7 +298,7 @@ A Pipeline is specified as a sequence of stages, and each stage is either a Tran
 
 We illustrate this for the simple text document workflow. The figure below is for the training time usage of a Pipeline.
 
-<img src="img/ml-Pipeline.png" title="ML Pipeline Example" alt="ML Pipeline Example" width="80%">
+<img src="https://spark.apache.org/docs/latest/img/ml-Pipeline.png" title="ML Pipeline Example" alt="ML Pipeline Example" width="80%">
 
 # ML Pipeline Example
 
