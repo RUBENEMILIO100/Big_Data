@@ -22,3 +22,6 @@
                                          Flores Acosta Alfredo #15210331
                                                 NOMBRE DEL MAESTRO (A):
                                          Dr. Jose Christian Romero Hernandez
+                                    
+# HOMEWORK # 1 Main types of machine learning algorithms                                    
+                                     
