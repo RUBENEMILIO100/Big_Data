@@ -306,6 +306,8 @@ Above, the top row represents a Pipeline with three stages. The first two (Token
 
 A Pipeline is an Estimator. Thus, after a Pipeline’s fit() method runs, it produces a PipelineModel, which is a Transformer. This PipelineModel is used at test time; the figure below illustrates this usage.
 
+<img src="https://camo.githubusercontent.com/92f8e764dfc76b266d3bf657407c6944d0f52727/68747470733a2f2f737061726b2e6170616368652e6f72672f646f63732f6c61746573742f696d672f6d6c2d506970656c696e654d6f64656c2e706e67" title="ML Pipeline Example" alt="ML Pipeline Example" width="80%">
+
 # ML PipelineModel Example
 
 In the figure above, the PipelineModel has the same number of stages as the original Pipeline, but all Estimators in the original Pipeline have become Transformers. When the PipelineModel’s transform() method is called on a test dataset, the data are passed through the fitted pipeline in order. Each stage’s transform() method updates the dataset and passes it to the next stage.
