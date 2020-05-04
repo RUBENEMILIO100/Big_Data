@@ -127,6 +127,8 @@ The Support measure helps prune the number of candidate item sets to be consider
 
 K-means is an iterative algorithm that groups similar data into clusters.It calculates the centroids of k clusters and assigns a data point to that cluster having least distance between its centroid and the data point.
 
+<img class=" ls-is-cached lazyloaded" src="https://www.dataquest.io/wp-content/uploads/2018/04/k-means-algorithm.png" data-src="https://www.dataquest.io/wp-content/uploads/2018/04/k-means-algorithm.png" alt="k-means-algorithm">
+
 k-means-algorithm
 
 Figure 6: Steps of the K-means algorithm. Source
