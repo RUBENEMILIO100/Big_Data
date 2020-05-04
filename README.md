@@ -236,6 +236,9 @@ Besides units, there is another consideration too: “small” also needs to be 
 There is a risk of over-fitting whenever the number of parameters in your model is large relative to the number of data points you have. For example, if we are trying to predict one real quantity y as a function of another real quantity x, and our observations are (xᵢ, yᵢ) with x₁ < x₂ < x₃ … , a general interpolation theorem tells us there is some polynomial f(x) of degree at most n+1 with f(xᵢ) = yᵢ for i = 1, … , n. This means if we chose our model to be a degree n+1 polynomial, by tweaking the parameters of our model (the coefficients of the polynomial), we would be able to bring RMSE all the way down to 0. This is true regardless of what our y values are. In this case RMSE isn’t really telling us anything about the accuracy of our underlying model: we were guaranteed to be able to tweak parameters to get RMSE = 0 as measured measured on our existing data points regardless of whether there is any relationship between the two real quantities at all.
 
 # References 
-https://spark.apache.org/docs/latest/ml-features.html#vectorassembler 
-https://towardsdatascience.com/what-does-rmse-really-mean-806b65f2e48e
+
+Extracting, transforming and selecting features - Spark 2.4.5 Documentation. (s. f.). Recuperado 3 de mayo de 2020, de https://spark.apache.org/docs/latest/ml-features.html#vectorassembler 
+
+
+Moody, J. (2019, septiembre 5). What does RMSE really mean? Recuperado 3 de mayo de 2020, de https://towardsdatascience.com/what-does-rmse-really-mean-806b65f2e48e 
 
