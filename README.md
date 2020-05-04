@@ -89,7 +89,7 @@ where:
 
 This algorithm is called ‘naive’ because it assumes that all the variables are independent of each other, which is a naive assumption to make in real-world examples.
 
-<img class=" ls-is-cached lazyloaded" src="/wp-content/uploads/2019/01/Naive-Bayes.png" data-src="/wp-content/uploads/2019/01/Naive-Bayes.png" alt="Naive-Bayes">
+<img class=" ls-is-cached lazyloaded" src="/wp-content/uploads/2019/01/Naive-Bayes.png" data-src="/wp-content/uploads/2019/01/Naive-Bayes.png" alt="Naive-Bayes"> 
 
 Naive-Bayes
 
