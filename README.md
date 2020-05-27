@@ -32,7 +32,7 @@
 Practice1
 
 1-Import LinearRegression
-'''
+'''scala
 import org.apache.spark.ml.regression.LinearRegression
 '''
 
