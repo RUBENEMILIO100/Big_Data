@@ -25,6 +25,14 @@
                                     
 # HOMEWORK # 1 Main types of machine learning algorithms.   
 
+
+
+# PRACTICES.
+
+```scala
+1- Develop an algorithm in scala that calculates the radius of a circle.
+```
+
 # 1. Linear Regression
 
 In machine learning, we have a set of input variables (x) that are used to determine an output variable (y). A relationship exists between the input variables and the output variable. The goal of ML is to quantify this relationship.
