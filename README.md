@@ -23,7 +23,7 @@
                                                 NOMBRE DEL MAESTRO (A):
                                          Dr. Jose Christian Romero Hernandez
                                     
-# HOMEWORK # 1 Main types of machine learning algorithms.   
+  
 
 
 
@@ -654,7 +654,7 @@ println(s"Test Error = ${1 - accuracy}")
 
 
 
-# HOMEWORKS
+# HOMEWORK # 1 Main types of machine learning algorithms. 
 
 # 1. Linear Regression
 
