@@ -35,6 +35,31 @@ Practice1
 ```scala
 1- import org.apache.spark.ml.regression.LinearRegression
 ```
+2. Optional: Use the following code to configure errors
+```scala
+import org.apache.log4j._
+Logger.getLogger("org").setLevel(Level.ERROR)
+```
+3. Start a simple Spark Session
+```scala
+import org.apache.spark.sql.SparkSession
+val spark = SparkSession.builder().getOrCreate()
+```
+4. Use Spark for the Clean-Ecommerce csv file
+```scala
+val data  = spark.read.option("header","true").option("inferSchema", "true").format("csv").load("Clean-Ecommerce.csv")
+```
+First declare a variable (df) to which the file to be loaded will be assigned.
+
+spark.read is used to load a CSV file into Spark.
+.option ("header", "true") is used to load file headers.
+.option ("inferSchema", "true") helps Spark automatically infer data types from the file.
+
+5. Print the schema on the DataFrame
+```scala
+data.printSchema
+```
+
 
 
 
