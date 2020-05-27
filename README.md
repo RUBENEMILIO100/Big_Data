@@ -29,12 +29,19 @@
 
 # PRACTICES.
 
+Practice1
 
-# 1. Import LinearRegression
-```scala
+1-Import LinearRegression
+'''
 import org.apache.spark.ml.regression.LinearRegression
-```
-```scala
+'''
+
+
+
+
+
+
+
 
 # 1. Linear Regression
 
