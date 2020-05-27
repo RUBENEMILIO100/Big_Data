@@ -344,58 +344,58 @@ import org.apache.spark.sql.SparkSession
 ```scala
   def main(): Unit = {
     val spark = SparkSession.builder.appName("RandomForestClassifierExample").getOrCreate()
-    ```
+```
 4. Load and parse the data file, converting it to a DataFrame.
 ```scala
     val data = spark.read.format("libsvm").load("sample_libsvm_data.txt")
-    ```
+```
 5. Index labels, adding metadata to the label column.
 ```scala
 Fit on whole dataset to include all labels in index.
     val labelIndexer = new StringIndexer().setInputCol("label").setOutputCol("indexedLabel").fit(data)
-    ```
+```
 6. Automatically identify categorical features, and index them.
 ```scala
 Set maxCategories so features with > 4 distinct values are treated as continuous.
     val featureIndexer = new VectorIndexer().setInputCol("features").setOutputCol("indexedFeatures").setMaxCategories(4).fit(data)
-    ```
+```
 7. Split the data into training and test sets.
 ```scala
 30% held out for testing.
     val Array(trainingData, testData) = data.randomSplit(Array(0.7, 0.3))
-    ```
+```
 8. Train a RandomForest model.
 ```scala
     val rf = new RandomForestClassifier().setLabelCol("indexedLabel").setFeaturesCol("indexedFeatures").setNumTrees(10)
-    ```
+```
 9. Convert indexed labels back to original labels.
 ```scala
     val labelConverter = new IndexToString().setInputCol("prediction").setOutputCol("predictedLabel").setLabels(labelIndexer.labels)
-    ```
+```
 10. Chain indexers and forest in a Pipeline.
 ```sscala
     val pipeline = new Pipeline().setStages(Array(labelIndexer, featureIndexer, rf, labelConverter))
-     ```
+```
 11. Train model.
 ```scala
 This also runs the indexers.
     val model = pipeline.fit(trainingData)
-    ```
+```
 12. Make predictions.
 ```scala
     val predictions = model.transform(testData)
-    ```
+```
 13. Select example rows to display.
 ```scala
     predictions.select("predictedLabel", "label", "features").show(5)
-    ```
+```
 14. Select (prediction, true label) and compute test error.
 ```scala
     val evaluator = new MulticlassClassificationEvaluator().setLabelCol("indexedLabel").setPredictionCol("prediction").setMetricName("accuracy")
 
     val accuracy = evaluator.evaluate(predictions)
     println(s"Test Error = ${(1.0 - accuracy)}")
-    ```
+```
 15. Print the trees obtained from the model (10).
 ```scala
     val rfModel = model.stages(2).asInstanceOf[RandomForestClassificationModel]
