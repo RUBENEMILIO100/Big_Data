@@ -34,7 +34,7 @@ LINEAR REGRESSION PRACTICE
 First Stepts
 '''1. Import LinearRegression
 
-import org.apache.spark.ml.regression.LinearRegression''
+import org.apache.spark.ml.regression.LinearRegression'''
 2. Optional: Use the following code to configure errors
 
 import org.apache.log4j._
