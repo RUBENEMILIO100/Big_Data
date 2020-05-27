@@ -27,7 +27,22 @@
                                     
                                     
  # CONTENIDO
- <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_1/README.md#practices1-session-1">Practice 1</a>  
+ <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#practice1">Practice 1</a>
+ 
+ <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#practice2">Practice 2</a>
+ 
+ <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#practice3">Practice 3</a>
+ 
+ <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#practice4">Practice 4</a>
+ 
+ <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#practice5">Practice 5</a>
+ 
+ <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#practice6">Practice 6</a>
+ 
+ <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#practice7">Practice 7</a>
+ 
+ <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#practice8">Practice 8</a>
+ 
 
 
 
