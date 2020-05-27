@@ -106,6 +106,7 @@ def Esprimo(i :Int) : Boolean = {
     true
     else
     !(2 to (i-1)).exists(x=> i % x==0)
+    
 }
 ```
 ```scala
