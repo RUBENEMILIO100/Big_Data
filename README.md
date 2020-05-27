@@ -29,7 +29,7 @@
 
 # PRACTICES.
 
-Practice1
+# Practice1
 
 1-Import LinearRegression
 ```scala
@@ -107,6 +107,147 @@ val RMSE = trainingSummary.rootMeanSquaredError
 val MSE = scala.math.pow(RMSE, 2.0)
 val R2 = trainingSummary.r2
 ```
+
+# Practice2
+
+1 Import a SparkSession with the Logistic Regression library
+```scala
+import org.apache.spark.ml.classification.LogisticRegression
+import org.apache.spark.sql.SparkSession
+LogisticRegression:
+```
+Optional: Use the Error reporting code
+```scala
+import org.apache.log4j._
+Logger.getLogger("org").setLevel(Level.ERROR)
+log4j._:
+Logger.getLogger("org").setLevel(Level.ERROR):
+```
+Create a Spark session
+```scala
+val spark = SparkSession.builder().getOrCreate()
+```
+Use Spark to read the csv Advertising file
+```scala
+val data  = spark.read.option("header","true").option("inferSchema", "true").format("csv").load("advertising.csv")
+```
+Print the Schema of the DataFrame
+```scala
+data.printSchema()
+```
+
+2. Display the data
+Print an example line
+```scala
+data.head(1)
+
+val colnames = data.columns
+val firstrow = data.head(1)(0)
+println("\n")
+println("Example data row")
+for(ind <- Range(0, colnames.length)){
+    println(colnames(ind))
+    println(firstrow(ind))
+    println("\n")
+}
+head():
+```
+
+3. Prepare the DataFrame for Machine Learning
+Create a new column called "Hour" of the Timestamp containing "Hour of the click"
+```scala
+val timedata = data.withColumn("Hour",hour(data("Timestamp")))
+withColumn():
+```
+
+Rename the column "Clicked on Ad" to "label"
+Take the following columns as features "Daily Time Spent on Site", "Age", "Area Income", "Daily Internet Usage", "Hour", "Male"
+
+```scala
+val logregdata = timedata.select(data("Clicked on Ad").as("label"), $"Daily Time Spent on Site", $"Age", $"Area Income", $"Daily Internet Usage", $"Hour", $"Male")
+.select():
+```
+Import VectorAssembler and Vectors
+```scala
+import org.apache.spark.ml.feature.VectorAssembler
+import org.apache.spark.ml.linalg.Vectors
+VectorAssembler:
+Vectors:
+```
+Create a new VectorAssembler object called assembler for the features
+```scala
+val assembler = (new VectorAssembler()
+                  .setInputCols(Array("Daily Time Spent on Site", "Age","Area Income","Daily Internet Usage","Hour","Male"))
+                  .setOutputCol("features"))
+.setInputCols:
+.setOutputCol:
+```
+
+Use randomSplit to create train and test data divided by 70/30
+```scala
+val Array(training, test) = logregdata.randomSplit(Array(0.7, 0.3), seed = 12345)
+.randomSplit():
+seed:
+```
+
+4. Set up a Pipeline
+mport Pipeline
+```scala
+import org.apache.spark.ml.Pipeline
+Pipeline:
+```
+
+Create a new LogisticRegression object called lr
+```scala
+val lr = new LogisticRegression()
+```
+Create a new pipeline with the elements: assembler, lr
+```scala
+val pipeline = new Pipeline().setStages(Array(assembler, lr))
+.setStages():
+```
+
+Adjust (fit) the pipeline for the training set
+```scala
+val model = pipeline.fit(training)
+.fit():
+```
+Take the Results in the Test set with transform
+```scala
+val results = model.transform(test)
+.transform():
+```
+
+5. Model evaluation
+For Metrics and Evaluation import MulticlassMetrics
+```scala
+import org.apache.spark.mllib.evaluation.MulticlassMetrics
+MulticlassMetrics:
+```
+Convert test results to RDD using .as and .rdd
+```scala
+val predictionAndLabels = results.select($"prediction",$"label").as[(Double, Double)].rdd
+.as():
+.rdd:
+```
+Initialize a MulticlassMetrics object
+```scala
+val metrics = new MulticlassMetrics(predictionAndLabels)
+```
+Print the Confusion Matrix
+```scala
+println("Confusion matrix:")
+println(metrics.confusionMatrix)
+metrics:
+confusionMatrix:
+```
+
+Print the model Accuracy value
+```scala
+metrics.accuracy
+accuracy:
+```
+
 
 
 
