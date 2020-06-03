@@ -57,8 +57,9 @@
 
 # PRACTICES.
 
-# LINEAR REGRESSION PRACTICE
+
 # Practice1
+# LINEAR REGRESSION PRACTICE
 
 1-Import LinearRegression
 ```scala
@@ -138,6 +139,7 @@ val R2 = trainingSummary.r2
 ```
 
 # Practice2
+# Logistic Regression Project
 
 1 Import a SparkSession with the Logistic Regression library
 ```scala
@@ -278,6 +280,7 @@ accuracy:
 ```
 
 # Practice3
+# Decision Tree Classifier
 
 1. Import libraries.
 ```scala
@@ -357,7 +360,7 @@ This also runs the indexers.
 main()
 ```
 # Practice4
-
+# Random Forest Classifier
 1. Import libraries.
 ```scala
 import org.apache.spark.ml.Pipeline
