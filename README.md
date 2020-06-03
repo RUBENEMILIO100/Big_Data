@@ -58,7 +58,7 @@
 # PRACTICES.
 
 # LINEAR REGRESSION PRACTICE
-# Practice 1
+# Practice1
 
 1-Import LinearRegression
 ```scala
