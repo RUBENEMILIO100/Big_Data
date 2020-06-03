@@ -27,7 +27,7 @@
                                     
                                     
  # CONTENIDO
- <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#practice1">Practice 1</a>
+ <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#practice1">LINEAR REGRESSION PRACTICE</a>
  
  <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#practice2">Practice 2</a>
  
