@@ -851,7 +851,7 @@ Adaboost stands for Adaptive Boosting. Bagging is a parallel ensemble because ea
 
 Bagging mostly involves ‘simple voting’, where each classifier votes to obtain a final outcome– one that is determined by the majority of the parallel models; boosting involves ‘weighted voting’, where each classifier votes to obtain a final outcome which is determined by the majority– but the sequential models were built by assigning greater weights to misclassified instances of the previous models.
 
-# Homework # 2 Vectors & RMSE.   
+  
 
 
 # VectorAssembler Library
