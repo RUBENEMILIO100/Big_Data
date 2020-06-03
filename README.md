@@ -8,6 +8,7 @@
 
                                                     SEMESTRE: 
                                                 Enero - Junio 2020
+                                                
                                                      CARRERA: 
                                 Ing. Tecnologías de la Información y Comunicaciones
 
