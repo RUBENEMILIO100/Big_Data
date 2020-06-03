@@ -46,7 +46,7 @@
  
  <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#main-types-of-machine-learning-algorithms">Homework 1</a>
  
- <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#homework--2-vectors--rmse">Homework 2</a>
+ <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#vectorassembler-library">Homework 2</a>
  
   <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#homework-3-pipeline--confusion--matrix-">Homework 3</a>
  
