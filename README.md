@@ -688,7 +688,7 @@ println(s"Test Error = ${1 - accuracy}")
 
 
 
-Main types of machine learning algorithms. 
+# Main types of machine learning algorithms. 
 
 # 1. Linear Regression
 
