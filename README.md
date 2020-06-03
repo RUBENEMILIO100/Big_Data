@@ -48,7 +48,7 @@
  
  <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#vectorassembler-library">Homework 2</a>
  
-  <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#homework-3-pipeline--confusion--matrix-">Homework 3</a>
+  <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#pipeline--confusion--matrix-">Homework 3</a>
  
  
  
