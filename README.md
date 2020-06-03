@@ -909,7 +909,7 @@ Moody, J. (2019, septiembre 5). What does RMSE really mean? Recuperado 3 de mayo
 
 
 
-# Homework #3 Pipeline & Confusion 🍥 Matrix 😎
+# Pipeline & Confusion 🍥 Matrix 😎
 
 MLlib standardizes APIs for machine learning algorithms to make it easier to combine multiple algorithms into a single pipeline, or workflow. This section covers the key concepts introduced by the Pipelines API, where the pipeline concept is mostly inspired by the scikit-learn project.
 
