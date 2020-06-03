@@ -440,6 +440,7 @@ main()
 ```
 
 # Practice5
+# Gradient-Boosted Tree (GBT) Classifier
 
 1. Import libraries.
 ```scala
@@ -527,6 +528,7 @@ This also runs the indexers.
 main()
 ```
 # Practice6
+# Multilayer Perceptron Classifier
 
 1. Import libraries and package
 ```scala
@@ -579,7 +581,7 @@ val evaluator = new MulticlassClassificationEvaluator()
 println(s"Test set accuracy = ${evaluator.evaluate(predictionAndLabels)}")
 ```
 # Practice7
-
+# Linear Support Vector Machine
 1. Import libraries and package
 ```scala
 package org.apache.spark.examples.ml
@@ -612,6 +614,7 @@ val lsvcModel = lsvc.fit(training)
 println(s"Coefficients: ${lsvcModel.coefficients} Intercept: ${lsvcModel.intercept}")
 ```
 # Practice8
+# One-vs-Rest classifier (a.k.a. One-vs-All)
 
 1. Import libraries.
 ```scala
