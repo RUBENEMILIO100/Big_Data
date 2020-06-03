@@ -44,7 +44,7 @@
  
  <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#practice8">Practice 8</a>
  
- <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#1-linear-regression">Homework 1</a>
+ <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#homework--1-main-types-of-machine-learning-algorithms">Homework 1</a>
  
  <a href="https://github.com/RUBENEMILIO100/Big_Data/blob/Unit_2/README.md#homework--2-vectors--rmse">Homework 2</a>
  
@@ -688,7 +688,7 @@ println(s"Test Error = ${1 - accuracy}")
 
 
 
-# HOMEWORK # 1 Main types of machine learning algorithms. 
+Main types of machine learning algorithms. 
 
 # 1. Linear Regression
 
