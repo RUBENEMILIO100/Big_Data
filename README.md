@@ -26,6 +26,7 @@
 # Instructions
 
 Develop the following instructions in Spark with the Scala programming language.
+
 Objective:
 The objective of this practical exam is to try to group clients from specific regions
-from a wholesale distributor. This is based on the sales of some product categories.                                         
+from a wholesale distributor. This is based on the sales of some product categories.                                      
