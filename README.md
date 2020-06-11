@@ -32,11 +32,11 @@ The objective of this practical exam is to try to group clients from specific re
 from a wholesale distributor. This is based on the sales of some product categories.        
 
 
+
+# // # 1- Import a simple Spark session.
 ''' scala
-// # 1- Import a simple Spark session.
-
 import org.apache.spark.sql.SparkSession
-
+'''
 //                        ^
 // Spark Session -------- ^
 
