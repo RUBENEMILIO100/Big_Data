@@ -34,7 +34,7 @@ from a wholesale distributor. This is based on the sales of some product categor
 
 
 # // # 1- Import a simple Spark session.
-''' scala
+'''scala
 import org.apache.spark.sql.SparkSession
 '''
 //                        ^
