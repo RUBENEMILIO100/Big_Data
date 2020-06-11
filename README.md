@@ -39,22 +39,25 @@ from a wholesale distributor. This is based on the sales of some product categor
 import org.apache.spark.sql.SparkSession
 ```
 
-//                        ^
-// Spark Session -------- ^
 
-// # 2 Use the lines of code to minimize errors
+# // Spark Session -------- ^
 
+# // # 2 Use the lines of code to minimize errors
+
+```scala
 import org.apache.log4j._
 Logger.getLogger("org").setLevel(Level.ERROR)
+```
+# // # 3 Create an instance of the Spark session
 
-// # 3 Create an instance of the Spark session
-
+```scala
 val spark = SparkSession.builder().getOrCreate()
+```
 
-// # 4 Import the Kmeans library for the grouping algorithm. 
-
+# // # 4 Import the Kmeans library for the grouping algorithm. 
+```scala
 import org.apache.spark.ml.clustering.KMeans
-
+```
 // # 5 Loads the Wholesale Customers Data dataset
 // From https://github.com/jcromerohdz/BigData/blob/master/Spark_clustering/Wholesale%20customers%20data.csv 
 
