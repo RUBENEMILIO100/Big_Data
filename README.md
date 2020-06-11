@@ -58,37 +58,46 @@ val spark = SparkSession.builder().getOrCreate()
 ```scala
 import org.apache.spark.ml.clustering.KMeans
 ```
-// # 5 Loads the Wholesale Customers Data dataset
-// From https://github.com/jcromerohdz/BigData/blob/master/Spark_clustering/Wholesale%20customers%20data.csv 
+# // # 5 Loads the Wholesale Customers Data dataset
+# // From https://github.com/jcromerohdz/BigData/blob/master/Spark_clustering/Wholesale%20customers%20data.csv 
 
+```scala
 val dataset = spark.read.option("header","true").option("inferSchema","true").format("csv").load("Wholesale customers data.csv")
-
-// # 6 Select the following columns: Fresh, Milk, Grocery, Frozen, Detergents_Paper,
-// Delicassen and call this set feature_data
+``` 
+# // # 6 Select the following columns: Fresh, Milk, Grocery, Frozen, Detergents_Paper,
+# // Delicassen and call this set feature_data
+```scala
 val feature_data = dataset.select($"Fresh", $"Milk", $"Grocery", $"Frozen", $"Detergents_Paper", $"Delicassen")
-
-// # 7 Import Vector Assembler and Vector
+```
+# // # 7 Import Vector Assembler and Vector
+```scala
 import org.apache.spark.ml.feature.VectorAssembler
 import org.apache.spark.ml.linalg.Vectors
+```
 
-// # 8 Create a new Vector Assembler object for feature columns as a
-// input set, remembering that there are no labels
+# // # 8 Create a new Vector Assembler object for feature columns as a
+# // input set, remembering that there are no labels
+```scala
 val assembler = new VectorAssembler().setInputCols(Array("Fresh", "Milk", "Grocery", "Frozen", "Detergents_Paper", "Delicassen")).setOutputCol("features")
+```
 
-// # 9 Use the assembler object to transform feature_data
+# // # 9 Use the assembler object to transform feature_data
+```scala
 val traning = assembler.transform(feature_data)
-
-// # 10 Create a Kmeans model with K = 3
+```
+# // # 10 Create a Kmeans model with K = 3
+```scala
 val kmeans = new KMeans().setK(3).setSeed(1L)
 val model = kmeans.fit(traning)
-
-// # 11 Evaluate the groups using Within Set Sum of Squared Errors WSSSE and print the centroids.
-// Squared Errors
+``` 
+# // # 11 Evaluate the groups using Within Set Sum of Squared Errors WSSSE and print the centroids.
+# // Squared Errors
+```scala
 val WSSSE = model.computeCost(traning)
 println(s"Within Set Sum of Squared Errors = $WSSSE")
-
-// Centers
+```
+# // Centers
+```scala
 println("Cluster Centers: ")
 model.clusterCenters.foreach(println)
-
-'''
+```
