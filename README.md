@@ -411,9 +411,10 @@ We will remember that for each algorithm a number of 10 iterations had to be per
 
 1. Support Vector Machine (SVM)
 For this algorithm, the results were as follows:
-
+```scala
 Coefficients: [- 2.125897501491213E, -0.13517227458849872,7.51402188801716E-4.2.70233375064008964E, 0.0111177544540215354] Intercep: -1.084924165339881
 With an Accuracy of: 0.8881574025585397
+```
 
 2. Decision Tre
 
