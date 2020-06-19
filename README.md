@@ -36,14 +36,14 @@
 
 Index
 
-Introduction 
+#Introduction 
 
-Theoretical framework of the algorithms 
+#Theoretical framework of the algorithms 
 
-Implementation
+#Implementation
 
-Results
+#Results
 
-Conclusions 
+#Conclusions 
 
-References 
+#References 
