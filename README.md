@@ -221,11 +221,11 @@ val evaluator = new MulticlassClassificationEvaluator (). setLabelCol ("indexedL
 ```
 ```scala
 val accuracy = evaluator.evaluate (predictions)
-println (s "Test Error = $ {(1.0 - accuracy)} \ n")
+println (s "Test Error = $ {(1.0 - accuracy)} \n")
 ```
 ```scala
 val treeModel = model.stages (2) .asInstanceOf [DecisionTreeClassificationModel]
-println (s "Learned classification tree model: \ n \ n $ {treeModel.toDebugString}")
+println (s "Learned classification tree model: \n\n $ {treeModel.toDebugString}")
 
 }
 ```
@@ -235,6 +235,176 @@ println (s "Learned classification tree model: \ n \ n $ {treeModel.toDebugStrin
 dtre ()
 ```
 
+# Algorithm Linear Logistic regression
+
+
+// we import libraries to use from the logical regression algorithm
+```scala
+import org.apache.spark.sql.SparkSession
+import org.apache.log4j._
+import org.apache.spark.ml.feature. {IndexToString, StringIndexer, VectorIndexer, VectorAssembler}
+import org.apache.spark.ml.classification.LogisticRegression
+import org.apache.spark.mllib.evaluation.MulticlassMetrics
+import org.apache.spark.ml.Pipeline
+```
+
+// Eliminate various warnings / unnecessary errors
+```scala
+Logger.getLogger ("org"). SetLevel (Level.ERROR)
+```
+
+// We will start Spark session
+```scala
+val spark = SparkSession.builder (). getOrCreate ()
+```
+
+// We stick our DATASET
+```scala
+val df = spark.read.option ("header", "true"). option ("inferSchema", "true"). option ("delimiter", ";"). format ("csv"). load (" bank-full.csv ")
+
+val assembler = new VectorAssembler (). setInputCols (Array ("balance", "day", "duration", "pdays", "previous")). setOutputCol ("features")
+```
+
+```scala
+val labelIndexer = new StringIndexer (). setInputCol ("and"). setOutputCol ("label")
+val dataIndexed = labelIndexer.fit (df) .transform (df)
+```
+
+// Divide the DATAe in an array into parts of 70% & 30%
+```scala
+val Array (training, test) = dataIndexed.randomSplit (Array (0.7, 0.3), seed = 12345)
+```
+
+// A new Logistic Regression will be created
+```scala
+val lr = new LogisticRegression ()
+```
+
+// We will create a new pipeline
+``scala
+val pipeline = new Pipeline (). setStages (Array (assembler, lr))
+```
+
+// Our DATA model
+```scala
+val model = pipeline.fit (training)
+```
+
+// Expected results
+```scala
+val results = model.transform (test)
+```
+
+// Our predictions
+```scala
+val predictionAndLabels = results.select ($ "prediction", $ "label"). as [(Double, Double)]. rdd
+```
+
+// Our metrics
+```scala
+val metrics = new MulticlassMetrics (predictionAndLabels)
+```
+
+// Confusion matrix and accuracy
+// When we get the data, after cleaning the data,
+// pre-processing and disputes, the first step we do is to feed it to an outstanding model and
+// of course get results on the odds
+
+```scala
+println ("\ nAlgorithm Logistic Regression \ n")
+println ("\ nConfusion matrix:")
+println (metrics.confusionMatrix)
+println ("\ nAccuracy:")
+println (metrics.accuracy)
+}
+```
+
+// We run our Logistic Regression Algorithm
+```scala
+lore ()
+```
+
+# Algorithm Multilayer perceptron
+
+// we import libraries to use from the Multilayer Perceptron algorithm
+```scala
+import org.apache.spark.sql.SparkSession
+import org.apache.log4j._
+import org.apache.spark.ml.feature. {IndexToString, StringIndexer, VectorIndexer, VectorAssembler}
+import org.apache.spark.ml.classification.MultilayerPerceptronClassifier
+import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
+import org.apache.spark.ml.linalg.Vectors
+```
+
+// Eliminate various warnings / unnecessary errors
+```scala
+Logger.getLogger ("org"). SetLevel (Level.ERROR)
+```
+
+// We start our session spark
+```scala
+val spark = SparkSession.builder (). getOrCreate ()
+```
+
+// We load the DATASET
+```scala
+val df = spark.read.option ("header", "true"). option ("inferSchema", "true"). option ("delimiter", ";"). format ("csv"). load (" bank-full.csv ")
+
+val assembler = new VectorAssembler (). setInputCols (Array ("balance", "day", "duration", "pdays", "previous")). setOutputCol ("features")
+val features = assembler.transform (df)
+```
+
+```scala
+val labelIndexer = new StringIndexer (). setInputCol ("and"). setOutputCol ("label")
+val dataIndexed = labelIndexer.fit (features) .transform (features)
+```
+
+
+// We divide the data into an array into parts of 70% and 30%
+```scala
+val split = dataIndexed.randomSplit (Array (0.7, 0.3), seed = 1234L)
+val train = split (0)
+val test = split (1)
+```
+
+// We indicate the layers of the neural network that you want to implement in this dataset
+// 5 Input Layers By Size Of Features, 2 Hidden Layers Of 3 Neurons and 4 Output
+```scala
+val layers = Array [Int] (5, 3, 3, 2)
+```
+
+// We create the trainer with its parameters
+```scala
+val trainer = new MultilayerPerceptronClassifier (). setLayers (layers) .setBlockSize (128) .setSeed (1234L) .setMaxIter (100)
+```
+
+// Model is trained
+```scala
+val model = trainer.fit (train)
+```
+
+// // Print the Accuracy Model of the Multilayer Perceptron Algorithm
+```scala
+val result = model.transform (test)
+```
+
+// The predictions and the label (original)
+```scala
+val predictionAndLabels = result.select ("prediction", "label")
+```
+
+// Model precision estimation runs
+```scala
+val evaluator = new MulticlassClassificationEvaluator (). setMetricName ("accuracy")
+println (s "Accuracy test = $ {evaluator.evaluate (predictionAndLabels)}")
+
+}
+```
+
+// The algorithm is run
+```scala
+mlp ()
+```
 
 
 # Results
