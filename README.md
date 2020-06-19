@@ -139,6 +139,104 @@ println (s "Coefficients: $ {lsvcModel.coefficients} Intercept: $ {lsvcModel.int
 ```scala
 svm ()
 ```
+
+# ADT (Algorithm Decision Three)
+
+// We import libraries
+```scala
+import org.apache.spark.sql.SparkSession
+import org.apache.log4j._
+import org.apache.spark.ml.Pipeline
+import org.apache.spark.ml.classification.DecisionTreeClassifier
+import org.apache.spark.ml.classification.DecisionTreeClassificationModel
+import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
+import org.apache.spark.ml.feature. {IndexToString, StringIndexer, VectorIndexer, VectorAssembler}
+```
+
+
+// We remove the Warnings / possible erroes
+```scala
+Logger.getLogger ("org"). SetLevel (Level.ERROR)
+```
+
+// We start our session spark
+```scala
+val spark = SparkSession.builder (). getOrCreate ()
+```
+
+// We load our DATASET
+```scala
+val df = spark.read.option ("header", "true"). option ("inferSchema", "true"). option ("delimiter", ";"). format ("csv"). load (" bank-full.csv ")
+```
+```scala
+val assembler = new VectorAssembler (). setInputCols (Array ("balance", "day", "duration", "pdays", "previous")). setOutputCol ("features")
+val features = assembler.transform (df)
+```
+
+```scala
+val labelIndexer0 = new StringIndexer (). setInputCol ("and"). setOutputCol ("label")
+val dataIndexed = labelIndexer0.fit (features) .transform (features)
+```
+// We create our indexedLabel
+```scala
+val labelIndexer = new StringIndexer (). setInputCol ("label"). setOutputCol ("indexedLabel"). fit (dataIndexed)
+```
+
+// We will create an indexedFeatures with their respective categories
+```scala
+val featureIndexer = new VectorIndexer (). setInputCol ("features"). setOutputCol ("indexedFeatures"). setMaxCategories (4)
+```
+// We divide the data in an array into parts of 70% and 30%
+```scala
+val Array (trainingData, testData) = dataIndexed.randomSplit (Array (0.7, 0.3))
+```
+
+// We train our algorithmic model
+```scala
+val dt = new DecisionTreeClassifier (). setLabelCol ("indexedLabel"). setFeaturesCol ("indexedFeatures")
+```
+
+// Convert indexed labels back to original labels
+```scala
+val labelConverter = new IndexToString (). setInputCol ("prediction"). setOutputCol ("predictedLabel"). setLabels (labelIndexer.labels)
+
+val pipeline = new Pipeline (). setStages (Array (labelIndexer, featureIndexer, dt, labelConverter))
+
+val model = pipeline.fit (trainingData)
+```
+
+// Predictions are made
+```scala
+val predictions = model.transform (testData)
+```
+
+// Select the filters to be able to display
+```scala
+predictions.select ("predictedLabel", "label", "features"). show (10)
+```
+
+// Test errors will be calculated
+```scala
+val evaluator = new MulticlassClassificationEvaluator (). setLabelCol ("indexedLabel"). setPredictionCol ("prediction"). setMetricName ("accuracy")
+```
+```scala
+val accuracy = evaluator.evaluate (predictions)
+println (s "Test Error = $ {(1.0 - accuracy)} \ n")
+```
+```scala
+val treeModel = model.stages (2) .asInstanceOf [DecisionTreeClassificationModel]
+println (s "Learned classification tree model: \ n \ n $ {treeModel.toDebugString}")
+
+}
+```
+
+// DT algorithm is run
+```scala
+dtre ()
+```
+
+
+
 # Results
 # Conclusions 
 # References
