@@ -29,10 +29,14 @@
 
 
 
-<a href="https://github.com/RUBENEMILIO100/Big_Data/blob/developmentBD/README.md#introduction">Introduction</a>
 
 
 
 # Introduction
+# Theoretical framework of the algorithms
+# Implementation
+# Results
+# Conclusions 
+# References
 
 
