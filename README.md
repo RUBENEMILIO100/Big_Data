@@ -285,10 +285,11 @@ val lr = new LogisticRegression ()
 val pipeline = new Pipeline (). setStages (Array (assembler, lr))
 ```
 
-// Our DATA model
+// Our Data model
 ```scala
 val model = pipeline.fit (training)
 ```
+
 
 // Expected results
 ```scala
