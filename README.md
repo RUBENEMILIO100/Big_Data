@@ -313,8 +313,8 @@ val metrics = new MulticlassMetrics (predictionAndLabels)
 ```scala
 println (metrics.confusionMatrix)
 println (metrics.accuracy)
-}
 ```
+}
 
 We run our Logistic Regression Algorithm
 ```scala
