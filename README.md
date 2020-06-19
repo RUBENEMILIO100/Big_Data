@@ -311,10 +311,7 @@ val metrics = new MulticlassMetrics (predictionAndLabels)
 // of course get results on the odds
 
 ```scala
-println ("\ nAlgorithm Logistic Regression \ n")
-println ("\ nConfusion matrix:")
 println (metrics.confusionMatrix)
-println ("\ nAccuracy:")
 println (metrics.accuracy)
 }
 ```
