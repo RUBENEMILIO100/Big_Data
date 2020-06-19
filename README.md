@@ -68,6 +68,61 @@ Considering the state of the world today and to solve the problems around us, we
 
 
 # Implementation
+
+In this process of comparing performance in each of the algorithms, the following software tools will be required to perform it. The use of them in Machine Learning algorithms will be explained.
+
+V. Why the use of these tools (Scala - Spark)?
+
+Why spark?
+
+Since almost all personal computers today have lots of Gigabytes of RAM (and it is growing fast) and powerful CPUs and GPUs, many real world machine learning problems can be solved with a single computer and frameworks like Scikit Learn, without the need for a distributed system, that is, a group of many computers. Sometimes, however, the data grows and continues to grow. Who never heard the term "Big Data"? When it happens, a non-distributed / scalable solution can be solved for a short time, but then it will be necessary to review that solution and perhaps change it significantly
+
+Why Scala?
+
+Scala is a beautiful and beautifully designed programming language, with a solid scientific background from Professor Martin Odersky's research team at the Ecole Polytechnique Fédérale de Lausanne.
+
+# SVM 
+
+// We import libraries
+
+import org.apache.spark.ml.classification.LinearSVC
+import org.apache.spark.sql.SparkSession
+import org.apache.log4j._
+import org.apache.spark.ml.feature. {IndexToString, StringIndexer, VectorIndexer, VectorAssembler}
+
+// We removed Warnig warnings / unnecessary errors
+Logger.getLogger ("org"). SetLevel (Level.ERROR)
+
+// We start our Spark session
+val spark = SparkSession.builder (). getOrCreate ()
+
+// Our DATASET is loaded into a DATAFRAME
+val df = spark.read.option ("header", "true"). option ("inferSchema", "true"). option ("delimiter", ";"). format ("csv"). load (" bank-full.csv ")
+
+// We will create the FEATURES
+val assembler = new VectorAssembler (). setInputCols (Array ("balance", "day", "duration", "pdays", "previous")). setOutputCol ("features")
+val features = assembler.transform (df)
+
+ 
+val labelIndexer = new StringIndexer (). setInputCol ("and"). setOutputCol ("label")
+val dataIndexed = labelIndexer.fit (features) .transform (features)
+
+
+val lsvc = new LinearSVC (). setMaxIter (10) .setRegParam (0.1)
+
+// We will make an accuracy or adjustment of the model
+val lsvcModel = lsvc.fit (dataIndexed)
+
+println ("\ nLinear Support Vector Machine Algorithm \ n")
+
+// Print the Interception Coefficient
+println (s "Coefficients: $ {lsvcModel.coefficients} Intercept: $ {lsvcModel.intercept}")
+
+
+}
+
+// Finally we will run the SVM algorithm
+svm ()
 # Results
 # Conclusions 
 # References
