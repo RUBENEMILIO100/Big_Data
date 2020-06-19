@@ -84,47 +84,61 @@ Scala is a beautiful and beautifully designed programming language, with a solid
 # SVM 
 
 // We import libraries
-'''scala
+```scala
 import org.apache.spark.ml.classification.LinearSVC
 import org.apache.spark.sql.SparkSession
 import org.apache.log4j._
 import org.apache.spark.ml.feature. {IndexToString, StringIndexer, VectorIndexer, VectorAssembler}
-''' 
+``` 
 
 // We removed Warnig warnings / unnecessary errors
 
+```scala
 Logger.getLogger ("org"). SetLevel (Level.ERROR)
+```
 
 // We start our Spark session
+```scala
 val spark = SparkSession.builder (). getOrCreate ()
+```
 
 // Our DATASET is loaded into a DATAFRAME
+```scala
 val df = spark.read.option ("header", "true"). option ("inferSchema", "true"). option ("delimiter", ";"). format ("csv"). load (" bank-full.csv ")
+```
 
 // We will create the FEATURES
+```scala
 val assembler = new VectorAssembler (). setInputCols (Array ("balance", "day", "duration", "pdays", "previous")). setOutputCol ("features")
+```
+```scala
 val features = assembler.transform (df)
+```
 
- 
+```scala 
 val labelIndexer = new StringIndexer (). setInputCol ("and"). setOutputCol ("label")
 val dataIndexed = labelIndexer.fit (features) .transform (features)
+```
 
-
+```scala
 val lsvc = new LinearSVC (). setMaxIter (10) .setRegParam (0.1)
+```
 
 // We will make an accuracy or adjustment of the model
+```scala
 val lsvcModel = lsvc.fit (dataIndexed)
-
-println ("\ nLinear Support Vector Machine Algorithm \ n")
+```
 
 // Print the Interception Coefficient
+```scala
 println (s "Coefficients: $ {lsvcModel.coefficients} Intercept: $ {lsvcModel.intercept}")
-
-
 }
+```
 
 // Finally we will run the SVM algorithm
+```scala
 svm ()
+```
 # Results
 # Conclusions 
 # References
