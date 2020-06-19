@@ -84,13 +84,15 @@ Scala is a beautiful and beautifully designed programming language, with a solid
 # SVM 
 
 // We import libraries
-
+'''scala
 import org.apache.spark.ml.classification.LinearSVC
 import org.apache.spark.sql.SparkSession
 import org.apache.log4j._
 import org.apache.spark.ml.feature. {IndexToString, StringIndexer, VectorIndexer, VectorAssembler}
+''' 
 
 // We removed Warnig warnings / unnecessary errors
+
 Logger.getLogger ("org"). SetLevel (Level.ERROR)
 
 // We start our Spark session
