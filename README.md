@@ -281,7 +281,7 @@ val lr = new LogisticRegression ()
 ```
 
 // We will create a new pipeline
-``scala
+```scala
 val pipeline = new Pipeline (). setStages (Array (assembler, lr))
 ```
 
