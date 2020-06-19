@@ -406,6 +406,48 @@ mlp ()
 
 
 # Results
+
+We will remember that for each algorithm a number of 10 iterations had to be performed to see the change in results in each of them, We will start with the first algorithm
+
+1. Support Vector Machine (SVM)
+For this algorithm, the results were as follows:
+
+Coefficients: [- 2.125897501491213E, -0.13517227458849872,7.51402188801716E-4.2.70233375064008964E, 0.0111177544540215354] Intercep: -1.084924165339881
+With an Accuracy of: 0.8881574025585397
+
+2. Decision Tre
+
+For this second algorithm, it is a little more complex due to the interactions that must be carried out with each of the nodes until reaching a result, this because your process is interpreted as a tree and each node refers to the tree leaves, making your process a little more exhausted
+
+The results of this algorithm give us an error test of: 0.11107837360047146
+As expected, he threw us the diagram of the tree, accommodating it depending on its Major> or <Minor value
+
+3. Logistic Regression
+
+This is the algorithm that we consider the correct one due to the response time and the accuracy of its prediction and with a small percentage of errors in its structural model for the final result.
+
+When we get the data, after the data cleansing, pre-processing, and disputes, the first step we take is to feed an outstanding model and of course get results on the odds.
+
+4. Multilayer Perceptron
+
+Well this algorithm is a little more complex because it is a neural model, its response time is a little longer but it also performs well like the rest of the algorithms, its only disadvantage would be the wait for response.
+
+Iteración SVM     TREE	   LR	     MLP
+1	        0.881	 0.8942	 0.8901	 0.8827
+2         0.881	 0.8990	 0.8706	 0.8827
+3	        0.881	 0.8928	 0.8901	 0.8827
+4	        0.881	 0.8920	 0.8991	 0.8827
+5	        0.881	 0.8946	 0.8886	 0.8827
+6	        0.881	 0.8956	 0.8954	 0.8827
+7	        0.881	 0.8998	 0.8953	 0.8827
+8	        0.881	 0.8953	 0.8954	 0.8827
+9	        0.881	 0.8928	 0.8853	 0.8827
+10	      0.881	 0.8944	 0.8994	 0.8827
+
+Average	  0.881  0.8944	 0.8994	 0.8827
+
+
+
 # Conclusions 
 # References
 
