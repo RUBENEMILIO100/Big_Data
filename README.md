@@ -83,7 +83,7 @@ Scala is a beautiful and beautifully designed programming language, with a solid
 
 # SVM 
 
-// We import libraries
+ We import libraries
 ```scala
 import org.apache.spark.ml.classification.LinearSVC
 import org.apache.spark.sql.SparkSession
@@ -91,23 +91,23 @@ import org.apache.log4j._
 import org.apache.spark.ml.feature. {IndexToString, StringIndexer, VectorIndexer, VectorAssembler}
 ``` 
 
-// We removed Warnig warnings / unnecessary errors
+We removed Warnig warnings / unnecessary errors
 
 ```scala
 Logger.getLogger ("org"). SetLevel (Level.ERROR)
 ```
 
-// We start our Spark session
+ We start our Spark session
 ```scala
 val spark = SparkSession.builder (). getOrCreate ()
 ```
 
-// Our DATASET is loaded into a DATAFRAME
+ Our DATASET is loaded into a DATAFRAME
 ```scala
 val df = spark.read.option ("header", "true"). option ("inferSchema", "true"). option ("delimiter", ";"). format ("csv"). load (" bank-full.csv ")
 ```
 
-// We will create the FEATURES
+ We will create the FEATURES
 ```scala
 val assembler = new VectorAssembler (). setInputCols (Array ("balance", "day", "duration", "pdays", "previous")). setOutputCol ("features")
 ```
@@ -124,25 +124,25 @@ val dataIndexed = labelIndexer.fit (features) .transform (features)
 val lsvc = new LinearSVC (). setMaxIter (10) .setRegParam (0.1)
 ```
 
-// We will make an accuracy or adjustment of the model
+ We will make an accuracy or adjustment of the model
 ```scala
 val lsvcModel = lsvc.fit (dataIndexed)
 ```
 
-// Print the Interception Coefficient
+ Print the Interception Coefficient
 ```scala
 println (s "Coefficients: $ {lsvcModel.coefficients} Intercept: $ {lsvcModel.intercept}")
 }
 ```
 
-// Finally we will run the SVM algorithm
+Finally we will run the SVM algorithm
 ```scala
 svm ()
 ```
 
 # ADT (Algorithm Decision Three)
 
-// We import libraries
+We import libraries
 ```scala
 import org.apache.spark.sql.SparkSession
 import org.apache.log4j._
@@ -154,17 +154,17 @@ import org.apache.spark.ml.feature. {IndexToString, StringIndexer, VectorIndexer
 ```
 
 
-// We remove the Warnings / possible erroes
+ We remove the Warnings / possible erroes
 ```scala
 Logger.getLogger ("org"). SetLevel (Level.ERROR)
 ```
 
-// We start our session spark
+ We start our session spark
 ```scala
 val spark = SparkSession.builder (). getOrCreate ()
 ```
 
-// We load our DATASET
+ We load our DATASET
 ```scala
 val df = spark.read.option ("header", "true"). option ("inferSchema", "true"). option ("delimiter", ";"). format ("csv"). load (" bank-full.csv ")
 ```
@@ -177,26 +177,26 @@ val features = assembler.transform (df)
 val labelIndexer0 = new StringIndexer (). setInputCol ("and"). setOutputCol ("label")
 val dataIndexed = labelIndexer0.fit (features) .transform (features)
 ```
-// We create our indexedLabel
+We create our indexedLabel
 ```scala
 val labelIndexer = new StringIndexer (). setInputCol ("label"). setOutputCol ("indexedLabel"). fit (dataIndexed)
 ```
 
-// We will create an indexedFeatures with their respective categories
+We will create an indexedFeatures with their respective categories
 ```scala
 val featureIndexer = new VectorIndexer (). setInputCol ("features"). setOutputCol ("indexedFeatures"). setMaxCategories (4)
 ```
-// We divide the data in an array into parts of 70% and 30%
+ We divide the data in an array into parts of 70% and 30%
 ```scala
 val Array (trainingData, testData) = dataIndexed.randomSplit (Array (0.7, 0.3))
 ```
 
-// We train our algorithmic model
+We train our algorithmic model
 ```scala
 val dt = new DecisionTreeClassifier (). setLabelCol ("indexedLabel"). setFeaturesCol ("indexedFeatures")
 ```
 
-// Convert indexed labels back to original labels
+Convert indexed labels back to original labels
 ```scala
 val labelConverter = new IndexToString (). setInputCol ("prediction"). setOutputCol ("predictedLabel"). setLabels (labelIndexer.labels)
 
@@ -205,17 +205,17 @@ val pipeline = new Pipeline (). setStages (Array (labelIndexer, featureIndexer, 
 val model = pipeline.fit (trainingData)
 ```
 
-// Predictions are made
+Predictions are made
 ```scala
 val predictions = model.transform (testData)
 ```
 
-// Select the filters to be able to display
+Select the filters to be able to display
 ```scala
 predictions.select ("predictedLabel", "label", "features"). show (10)
 ```
 
-// Test errors will be calculated
+Test errors will be calculated
 ```scala
 val evaluator = new MulticlassClassificationEvaluator (). setLabelCol ("indexedLabel"). setPredictionCol ("prediction"). setMetricName ("accuracy")
 ```
@@ -230,7 +230,7 @@ println (s "Learned classification tree model: \n\n $ {treeModel.toDebugString}"
 }
 ```
 
-// DT algorithm is run
+DT algorithm is run
 ```scala
 dtre ()
 ```
@@ -238,7 +238,7 @@ dtre ()
 # Algorithm Linear Logistic regression
 
 
-// we import libraries to use from the logical regression algorithm
+we import libraries to use from the logical regression algorithm
 ```scala
 import org.apache.spark.sql.SparkSession
 import org.apache.log4j._
@@ -248,17 +248,17 @@ import org.apache.spark.mllib.evaluation.MulticlassMetrics
 import org.apache.spark.ml.Pipeline
 ```
 
-// Eliminate various warnings / unnecessary errors
+Eliminate various warnings / unnecessary errors
 ```scala
 Logger.getLogger ("org"). SetLevel (Level.ERROR)
 ```
 
-// We will start Spark session
+We will start Spark session
 ```scala
 val spark = SparkSession.builder (). getOrCreate ()
 ```
 
-// We stick our DATASET
+We stick our DATASET
 ```scala
 val df = spark.read.option ("header", "true"). option ("inferSchema", "true"). option ("delimiter", ";"). format ("csv"). load (" bank-full.csv ")
 
@@ -270,46 +270,45 @@ val labelIndexer = new StringIndexer (). setInputCol ("and"). setOutputCol ("lab
 val dataIndexed = labelIndexer.fit (df) .transform (df)
 ```
 
-// Divide the DATAe in an array into parts of 70% & 30%
+Divide the DATAe in an array into parts of 70% & 30%
 ```scala
 val Array (training, test) = dataIndexed.randomSplit (Array (0.7, 0.3), seed = 12345)
 ```
 
-// A new Logistic Regression will be created
+ A new Logistic Regression will be created
 ```scala
 val lr = new LogisticRegression ()
 ```
 
-// We will create a new pipeline
+We will create a new pipeline
 ```scala
 val pipeline = new Pipeline (). setStages (Array (assembler, lr))
 ```
 
-// Our Data model
+Our Data model
 ```scala
 val model = pipeline.fit (training)
 ```
 
 
-// Expected results
+Expected results
 ```scala
 val results = model.transform (test)
 ```
 
-// Our predictions
+Our predictions
 ```scala
 val predictionAndLabels = results.select ($ "prediction", $ "label"). as [(Double, Double)]. rdd
 ```
 
-// Our metrics
+Our metrics
 ```scala
 val metrics = new MulticlassMetrics (predictionAndLabels)
 ```
-
-// Confusion matrix and accuracy
-// When we get the data, after cleaning the data,
-// pre-processing and disputes, the first step we do is to feed it to an outstanding model and
-// of course get results on the odds
+ Confusion matrix and accuracy
+ When we get the data, after cleaning the data,
+ pre-processing and disputes, the first step we do is to feed it to an outstanding model and
+ of course get results on the odds
 
 ```scala
 println (metrics.confusionMatrix)
@@ -317,14 +316,14 @@ println (metrics.accuracy)
 }
 ```
 
-// We run our Logistic Regression Algorithm
+We run our Logistic Regression Algorithm
 ```scala
 lore ()
 ```
 
 # Algorithm Multilayer perceptron
 
-// we import libraries to use from the Multilayer Perceptron algorithm
+we import libraries to use from the Multilayer Perceptron algorithm
 ```scala
 import org.apache.spark.sql.SparkSession
 import org.apache.log4j._
@@ -334,17 +333,17 @@ import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 import org.apache.spark.ml.linalg.Vectors
 ```
 
-// Eliminate various warnings / unnecessary errors
+Eliminate various warnings / unnecessary errors
 ```scala
 Logger.getLogger ("org"). SetLevel (Level.ERROR)
 ```
 
-// We start our session spark
+We start our session spark
 ```scala
 val spark = SparkSession.builder (). getOrCreate ()
 ```
 
-// We load the DATASET
+We load the DATASET
 ```scala
 val df = spark.read.option ("header", "true"). option ("inferSchema", "true"). option ("delimiter", ";"). format ("csv"). load (" bank-full.csv ")
 
@@ -358,40 +357,40 @@ val dataIndexed = labelIndexer.fit (features) .transform (features)
 ```
 
 
-// We divide the data into an array into parts of 70% and 30%
+We divide the data into an array into parts of 70% and 30%
 ```scala
 val split = dataIndexed.randomSplit (Array (0.7, 0.3), seed = 1234L)
 val train = split (0)
 val test = split (1)
 ```
 
-// We indicate the layers of the neural network that you want to implement in this dataset
-// 5 Input Layers By Size Of Features, 2 Hidden Layers Of 3 Neurons and 4 Output
+We indicate the layers of the neural network that you want to implement in this dataset
+5 Input Layers By Size Of Features, 2 Hidden Layers Of 3 Neurons and 4 Output
 ```scala
 val layers = Array [Int] (5, 3, 3, 2)
 ```
 
-// We create the trainer with its parameters
+We create the trainer with its parameters
 ```scala
 val trainer = new MultilayerPerceptronClassifier (). setLayers (layers) .setBlockSize (128) .setSeed (1234L) .setMaxIter (100)
 ```
 
-// Model is trained
+Model is trained
 ```scala
 val model = trainer.fit (train)
 ```
 
-// // Print the Accuracy Model of the Multilayer Perceptron Algorithm
+Print the Accuracy Model of the Multilayer Perceptron Algorithm
 ```scala
 val result = model.transform (test)
 ```
 
-// The predictions and the label (original)
+The predictions and the label (original)
 ```scala
 val predictionAndLabels = result.select ("prediction", "label")
 ```
 
-// Model precision estimation runs
+Model precision estimation runs
 ```scala
 val evaluator = new MulticlassClassificationEvaluator (). setMetricName ("accuracy")
 println (s "Accuracy test = $ {evaluator.evaluate (predictionAndLabels)}")
@@ -399,7 +398,7 @@ println (s "Accuracy test = $ {evaluator.evaluate (predictionAndLabels)}")
 }
 ```
 
-// The algorithm is run
+The algorithm is run
 ```scala
 mlp ()
 ```
