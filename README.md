@@ -431,10 +431,10 @@ When we get the data, after the data cleansing, pre-processing, and disputes, th
 4. Multilayer Perceptron
 
 Well this algorithm is a little more complex because it is a neural model, its response time is a little longer but it also performs well like the rest of the algorithms, its only disadvantage would be the wait for response.
-
+```scala
 Iteración SVM     TREE	   LR	     MLP
 1	        0.881	 0.8942	 0.8901	 0.8827
-2         0.881	 0.8990	 0.8706	 0.8827
+2             0.881	 0.8990	 0.8706	 0.8827
 3	        0.881	 0.8928	 0.8901	 0.8827
 4	        0.881	 0.8920	 0.8991	 0.8827
 5	        0.881	 0.8946	 0.8886	 0.8827
@@ -445,6 +445,7 @@ Iteración SVM     TREE	   LR	     MLP
 10	      0.881	 0.8944	 0.8994	 0.8827
 
 Average	  0.881  0.8944	 0.8994	 0.8827
+```
 
 
 
