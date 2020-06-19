@@ -451,6 +451,18 @@ Average	  0.881  0.8944	 0.8994	 0.8827
 
 
 # Conclusions 
+
+The performance of each of the algorithms are very good, but each algorithm is for a special case, if you are looking for a more accurate answer it is Logistic or the opposite case if you have a more complex model with a supervised structure it would be Multilayer, these algorithms Machine Learning is adapted depending on the need, since the perfect algorithm is the one that one considers. This is a wide range that Machine Learning has when projecting this type of performance on the various algorithms that were presented. In this case we opted for Logistic Regression, thanks to its performance, with a very fast response speed and the accuracy of its predictions.
+
 # References
+
+Portilla, J. (2019, 13 septiembre). Scala and Spark for Big Data and Machine Learning. Recuperado 17 de junio de 2020, de
+ https://www.udemy.com/course/scala-and-spark-for-big-data-and-machine-learning/
+
+Ray, S. (2020, 15 abril). Understanding Support Vector Machine(SVM) algorithm from examples (along with code). Recuperado 17 de junio de 2020, de https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/
+
+https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052+ 
+
+Prabhakaran, S. (2018, 23 abril). Logistic Regression – A Complete Tutorial With Examples in R. Recuperado 17 de junio de 2020, de https://www.machinelearningplus.com/machine-learning/logistic-regression-tutorial-examples-r/+
 
 
