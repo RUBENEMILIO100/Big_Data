@@ -22,3 +22,28 @@
                                          Flores Acosta Alfredo #15210331
                                                 NOMBRE DEL MAESTRO (A):
                                          Dr. Jose Christian Romero Hernandez
+
+
+
+
+
+
+
+
+
+
+
+
+Index
+
+Introduction 
+
+Theoretical framework of the algorithms 
+
+Implementation
+
+Results
+
+Conclusions 
+
+References 
