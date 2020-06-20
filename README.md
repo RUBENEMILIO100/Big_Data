@@ -34,16 +34,4 @@
 
 
 
-Index
 
-# Introduction 
-
-# Theoretical framework of the algorithms 
-
-# Implementation
-
-# Results
-
-# Conclusions 
-
-# References 
